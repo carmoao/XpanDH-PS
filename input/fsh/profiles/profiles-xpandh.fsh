@@ -65,7 +65,7 @@ Description: "This profile constrains the Flag resource to represent alerts or w
 * subject only Reference(PatientXpandh)
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ConditionXpandh
 Parent:   $Condition-uv-ips
 Id:       Condition-eu-xpandh
@@ -93,7 +93,7 @@ Description: "This profile defines how to represent Condition in FHIR for the pu
 * note ^definition = "Comment by the one who determined or updated the Problem." 
 * bodySite  ^definition = "Anatomical location which is the focus of the problem."
 
-
+ */
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ObservationResultsPathologyXpandh
 Parent:   http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips

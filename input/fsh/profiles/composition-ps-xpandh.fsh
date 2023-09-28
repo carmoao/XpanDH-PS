@@ -57,10 +57,15 @@ Description: "Clinical document used to represent a Patient Summary (HDR) for th
 * attester.time ^short = "When the composition was attested"
 * attester.party ^short = "Who attested the composition"
 
-* section 1..
+/* * section 1..
 * section ^slicing.discriminator[0].type = #pattern
 * section ^slicing.discriminator[0].path = "code"
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open
 * section ^short = "Sections composing the Patient Summary"
-* section ^definition = "The root of the sections that make up the Patient Summary composition."
+* section ^definition = "The root of the sections that make up the Patient Summary composition." */
+
+* section[sectionAllergies].entry[allergyOrIntolerance] only Reference (AllergyIntoleranceXpandh)
+* section[sectionProblems].entry[problem] only Reference (ConditionXpandh)
+* section[sectionProceduresHx].entry[procedure] only Reference (ProcedureXpandh)
+//  * section[sectionImmunizations].entry[immunization] only Reference (ImmunizationXpandh)

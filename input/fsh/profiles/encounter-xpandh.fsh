@@ -5,7 +5,8 @@ Title:    "Encounter: HDR"
 Description: "This profile defines how to represent Encounter in FHIR for the purpose of the XpanDH Hospital Discharge Report."
 * identifier ^short = "Identifier(s) by which this encounter is known."
 * status ^short = "Status of this Hospital stay"
-* class from HdrEncounterClassXpandh (extensible)
+// commented for the time being 
+// * class from HdrEncounterClassXpandh (extensible)
 * type ^short = "Specific type of Hospital stay" // add voc binding 
 * serviceType ^short = "Specific type of encounter." // add voc binding 
 * priority ^short = "Encounter priority" // add voc binding

@@ -22,6 +22,23 @@ Alias: $minsan-regione = http://terminology.hl7.it/CodeSystem/minsan-regione
 Alias: $spor = https://spor.ema.europa.eu/v1/organisations
 Alias: $jrc = https://covid-19-diagnostics.jrc.ec.europa.eu/devices
 
+// Value Sets
+Alias: $eHDSIReactionAllergy = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIReactionAllergy
+
+Alias: $eHDSIActiveIngredient = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIActiveIngredient
+
+Alias: $eHDSIAllergenNoDrug = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAllergenNoDrug
+
+Alias: $eHDSIAbsentOrUnknownAllergy = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAbsentOrUnknownAllergy
+
+Alias: $eHDSIAbsentOrUnknownProblem = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAbsentOrUnknownProblem
+
+Alias: $eHDSIIllnessandDisorder = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIIllnessandDisorder
+
+Alias: $eHDSIRareDisease = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIRareDisease
+
+Alias: $eHDSISeverity = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISeverity
+
 
 //----------- Profiles
 Alias: $Observation-results-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips
@@ -33,3 +50,6 @@ Alias: $MedicationStatement-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinit
 Alias: $Immunization-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips
 Alias: $clinicaldocument = http://hl7.org/fhir/StructureDefinition/clinicaldocument
 Alias: $CodeableConcept-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
+Alias: $AllergyIntolerance-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
+Alias: $Condition-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips 
+Alias: $Procedure-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips 
