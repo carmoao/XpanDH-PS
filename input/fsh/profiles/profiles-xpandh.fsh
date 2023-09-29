@@ -34,7 +34,7 @@ Description: "This profile constrains the CareTeam resource for the purpose of t
 * reasonCode ^short = "Problem this team is in charge of"
 * reasonReference only Reference(ConditionXpandh)
 
-
+/* 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  MedicationStatementXpandh
 Parent:   $MedicationStatement-uv-ips
@@ -45,7 +45,7 @@ Description: "This profile constrains the MedicationStatement IPS FHIR profile f
 
 * reasonCode ^short = "Reason (e.g. the Rare Disease) for why the medication is being/was taken"
 * reasonReference only Reference(ConditionXpandh or Observation or DiagnosticReport)
-* subject only Reference(PatientXpandh)
+* subject only Reference(PatientXpandh) */
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  FlagXpandh

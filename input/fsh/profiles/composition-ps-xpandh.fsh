@@ -65,7 +65,12 @@ Description: "Clinical document used to represent a Patient Summary (HDR) for th
 * section ^short = "Sections composing the Patient Summary"
 * section ^definition = "The root of the sections that make up the Patient Summary composition." */
 
+* section[sectionMedications].entry[medicationStatement] only Reference (MedicationStatementXpandh)
 * section[sectionAllergies].entry[allergyOrIntolerance] only Reference (AllergyIntoleranceXpandh)
 * section[sectionProblems].entry[problem] only Reference (ConditionXpandh)
+* section[sectionProceduresHx] 1..1
 * section[sectionProceduresHx].entry[procedure] only Reference (ProcedureXpandh)
-//  * section[sectionImmunizations].entry[immunization] only Reference (ImmunizationXpandh)
+* section[sectionImmunizations].entry[immunization] only Reference (ImmunizationXpandh)
+* section[sectionMedicalDevices] 1..1
+* section[sectionMedicalDevices].entry[deviceStatement] only Reference (DeviceUseStatementXpandh)
+

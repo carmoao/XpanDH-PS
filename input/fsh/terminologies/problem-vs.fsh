@@ -7,3 +7,12 @@ Description:   """Problems or no known or unknown conditions"""
 * codes from valueset $eHDSIIllnessandDisorder
 * codes from valueset $eHDSIRareDisease
 * codes from valueset $eHDSIAbsentOrUnknownProblem 
+
+ValueSet:      EHDSICondition
+Id:	       eHDSICondition
+Title:	       "Conditions"
+Description:   """Conditions""" 
+* ^experimental = false
+
+* codes from valueset $eHDSIIllnessandDisorder
+* codes from valueset $eHDSIRareDisease
