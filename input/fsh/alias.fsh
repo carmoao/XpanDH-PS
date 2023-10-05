@@ -36,6 +36,7 @@ Alias: $eHDSIVaccine = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIVaccine
 Alias: $eHDSIDoseForm = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIDoseForm
 Alias: $eHDSIMedicalDevice = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIMedicalDevice
 Alias: $eHDSISubstance = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISubstance
+Alias: $eHDSIBloodGroup = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIBloodGroup
 
 
 //----------- Profiles
@@ -53,3 +54,5 @@ Alias: $AllergyIntolerance-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefiniti
 Alias: $Condition-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips 
 Alias: $Procedure-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips 
 Alias: $Device-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips
+Alias: $Observation-results-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips
+Alias: $Observation-bp = http://hl7.org/fhir/StructureDefinition/bp

@@ -65,12 +65,65 @@ Description: "Clinical document used to represent a Patient Summary (HDR) for th
 * section ^short = "Sections composing the Patient Summary"
 * section ^definition = "The root of the sections that make up the Patient Summary composition." */
 
-* section[sectionMedications].entry[medicationStatement] only Reference (MedicationStatementXpandh)
-* section[sectionAllergies].entry[allergyOrIntolerance] only Reference (AllergyIntoleranceXpandh)
+* section[sectionMedications]
+  * ^short = "eHDSI Medication Summary"
+  * ^definition = """The medication summary section contains a description of the patient's medications as part of the patient summary"""
+  * entry[medicationStatement] only Reference (MedicationStatementXpandh)
+* section[sectionAllergies]
+  * ^short = "eHDSI Allergies and Other Adverse Reactions"
+  * ^definition = """The adverse and other adverse reactions section contains a narrative description of the substance intolerances and the associated adverse reactions suffered by the patient. It includes entries for intolerances and adverse reactions as described in the entry.
+
+The field \"alerts\" was originally defined to include all the important and objective medical information that should be highlighted (such as allergies, thrombosis risk, immune deficit …etc). When defining the content only allergies and intolerance to drugs appear to be the common understanding and the easiest to be transferred. A lot of surveys are being made in different countries (not only in Europe) to make a more evidence-based definition of what should represented and should not by the concept “alerts”, hence not enough information could be provided to take a further decision. As eHDSI\’s intention is not to duplicate information, this shall not be repeated. Alerts are difficult to represent since they are contextual. Alerts may be represented as severe or life-threatening allergies or other adverse reactions. Another area are certain selected procedures and implanted devices. The section Allergies and Other Adverse Reactions contains the medical alerts as well, based on the severity, and their representation becomes a Country B choice."""
+  * entry[allergyOrIntolerance] only Reference (AllergyIntoleranceXpandh)
 * section[sectionProblems].entry[problem] only Reference (ConditionXpandh)
+  * ^short = "eHDSI Active Problems"
+  * ^definition = """The active problem section contains a narrative description of the conditions currently being monitored for the patient. It includes entries for patient conditions as described in the Entry.
+This section can also be used to hold the Medical Alert information (other alerts not included in allergies). Alerts, of all types are to be considered for the next iteration of the specifications."""
 * section[sectionProceduresHx] 1..1
-* section[sectionProceduresHx].entry[procedure] only Reference (ProcedureXpandh)
-* section[sectionImmunizations].entry[immunization] only Reference (ImmunizationXpandh)
+  * ^short = "eHDSI List of Surgeries"
+  * ^definition = """The list of surgeries section includes entries for procedures and references to procedure reports when known as described in the Entry. In epSOS this section was used to describe the Surgical Procedures prior past six months (optional) and to record the Major Surgical Procedures past 6 months (required). This choice of considering a time based distinction was due by the subjectivity of \‘relevancy\’ for automatically assembled PS. 
+As the date can be seen from the procedure, the two have the same expression. It is up to the implementers of the system to display it in a different way."""
+  * entry[procedure] only Reference (ProcedureXpandh)
+* section[sectionImmunizations]
+  * ^short = "eHDSI Immunizations"
+  * ^definition = """The immunizations section contains a narrative description of the immunizations administered to the patient in the past. It includes entries for medication administration as described in related profiles."""
+  * entry[immunization] only Reference (ImmunizationXpandh)
 * section[sectionMedicalDevices] 1..1
-* section[sectionMedicalDevices].entry[deviceStatement] only Reference (DeviceUseStatementXpandh)
+  * ^short = "eHDSI Medical Devices"
+  * ^definition = """The medical devices section contains narrative text describing the patient history of medical device use.
+For the eHDSI Patient Summary this is a mandatory section and shall be used to record the Medical Devices and Implants. Each device shall be described using the specifed entry."""
+  * entry[deviceStatement] only Reference (DeviceUseStatementXpandh)
+* section[sectionResults]
+  * ^short = "eHDSI Coded Results"
+  * ^definition = """In eHDSI this section is used only for the purpose of providing the results for the blood group."""
+  * entry[results-observation] only Reference (ObservationBloodGroupXpandh or ObservationResultsXpandh)
+* section[sectionVitalSigns].entry[vitalSign] only Reference ($Observation-bp)
+  * ^short = "eHDSI Vital Signs"
+  * ^definition = """The vital signs section contains coded measurement results of a patient\’s vital signs."""
+* section[sectionPastIllnessHx].entry[pastProblem] only Reference (ConditionXpandh)
+  * ^short = "eHDSI History Of Past Illness"
+  * ^definition = """The History of Past Illness section contains a narrative description of the conditions the patient suffered in the past. It includes entries for problems as described in the Entry."""
+* section[sectionFunctionalStatus]
+  * ^short = "eHDSI Functional Status"
+  * ^definition = """The functional status section contains a narrative description of capability of the patient to perform acts of daily living."""
+* section[sectionFunctionalStatus]
+  * ^short = "eHDSI Functional Status"
+  * ^definition = """The functional status section contains a narrative description of capability of the patient to perform acts of daily living."""
+* section[sectionPlanOfCare]
+  * ^short = "eHDSI Health Maintenance Care Plan"
+  * ^definition = """The health maintenance care plan section contains a description of the expectations for wellness care including proposals, goals, and order requests for monitoring, tracking, or improving the lifetime condition of the patient with goals of educating the patient on how to reduce the modifiable risks of the patient\’s genetic, behavioral, and environmental pre-conditions and otherwise optimizing lifetime outcomes."""
+* section[sectionSocialHistory]
+  * ^short = "eHDSI Social History"
+  * ^definition = """The social history section contains a narrative description of the person\’s beliefs, home life, community life, work life, hobbies, and risky habits. It includes Social History Observations."""
+  // * insert SectionEntrySlicePerProfileRules (SLicing , eHDSI Social History Observation)
+  * insert SectionEntrySliceDefRules (eHDSISocialHistory, 0.., eHDSI Social History Observation, eHDSI Social History Observation, Observation)
+* section[sectionPregnancyHx]
+  * ^short = "eHDSI Pregnancy History"
+  * ^definition = """The pregnancy history section contains coded entries describing the patient history of pregnancies.
+This section is used in eHDSI only for the purpose of providing the Expected Date of Delivery, when applicable, not the full history of pregnancies."""
+* section[sectionAdvanceDirectives]
+  * ^short = "eHDSI Advance Directives Section"
+  * ^definition = """The advance directive section contains a narrative description of patient's advance directive. The optional author and informant elements are used when necessary to convey the provenance and authoring of the section content in case it is different from what is announced in the CDA header.
+Entries for references to consent and advance directive documents when known will be specified by future versions of this template."""
+
 

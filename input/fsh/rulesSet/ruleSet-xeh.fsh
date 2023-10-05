@@ -26,11 +26,19 @@ RuleSet: SectionEntrySliceComRules (short, def)
 * entry ^short = "{short}"
 * entry ^definition = "{def}" 
 
+RuleSet: SectionEntrySlicePerProfileRules (short, def)
+* entry ^slicing.discriminator[0].type = #profile
+* entry ^slicing.discriminator[0].path = "resolve()"
+* entry ^slicing.ordered = false
+* entry ^slicing.rules = #open
+* entry ^short = "{short}"
+* entry ^definition = "{def}" 
+
 RuleSet: SectionEntrySliceDefRules (name, card, short, def, profiles)
 // SectionEntrySliceDefRules (flags, 0.., "Care Team", "Care Team", CareTeamXpandh)
 
 * entry contains {name} {card}
-* entry[{name}] {card} MS
+* entry[{name}] {card} 
 * entry[{name}] ^short = "{short}"
 * entry[{name}] ^definition = "{def}"
 * entry[{name}] only Reference({profiles})
