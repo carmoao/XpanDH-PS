@@ -37,6 +37,7 @@ Alias: $eHDSIDoseForm = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIDoseForm
 Alias: $eHDSIMedicalDevice = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIMedicalDevice
 Alias: $eHDSISubstance = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISubstance
 Alias: $eHDSIBloodGroup = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIBloodGroup
+Alias: $eHDSISocialHistory = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISocialHistory
 
 
 //----------- Profiles

@@ -106,9 +106,6 @@ For the eHDSI Patient Summary this is a mandatory section and shall be used to r
 * section[sectionFunctionalStatus]
   * ^short = "eHDSI Functional Status"
   * ^definition = """The functional status section contains a narrative description of capability of the patient to perform acts of daily living."""
-* section[sectionFunctionalStatus]
-  * ^short = "eHDSI Functional Status"
-  * ^definition = """The functional status section contains a narrative description of capability of the patient to perform acts of daily living."""
 * section[sectionPlanOfCare]
   * ^short = "eHDSI Health Maintenance Care Plan"
   * ^definition = """The health maintenance care plan section contains a description of the expectations for wellness care including proposals, goals, and order requests for monitoring, tracking, or improving the lifetime condition of the patient with goals of educating the patient on how to reduce the modifiable risks of the patient\’s genetic, behavioral, and environmental pre-conditions and otherwise optimizing lifetime outcomes."""
@@ -116,7 +113,7 @@ For the eHDSI Patient Summary this is a mandatory section and shall be used to r
   * ^short = "eHDSI Social History"
   * ^definition = """The social history section contains a narrative description of the person\’s beliefs, home life, community life, work life, hobbies, and risky habits. It includes Social History Observations."""
   // * insert SectionEntrySlicePerProfileRules (SLicing , eHDSI Social History Observation)
-  * insert SectionEntrySliceDefRules (eHDSISocialHistory, 0.., eHDSI Social History Observation, eHDSI Social History Observation, Observation)
+  * insert SectionEntrySliceDefRules (eHDSISocialHistory, 0.., eHDSI Social History Observation, eHDSI Social History Observation, ObservationSocialHistoryXpandh)
 * section[sectionPregnancyHx]
   * ^short = "eHDSI Pregnancy History"
   * ^definition = """The pregnancy history section contains coded entries describing the patient history of pregnancies.
