@@ -9,4 +9,4 @@ Description: """This profile constrains the AllergyIntolerance resource for the 
 * patient only Reference(PatientXpandh)
 * onset[x] only dateTime // is this needed ?
 * reaction.substance from EHDSIAllergens  (extensible)
-* reaction.manifestation from $eHDSIReactionAllergy (extensible)
+* reaction.manifestation from EHDSIReactionAllergy (extensible)

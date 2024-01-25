@@ -22,7 +22,7 @@ Description: """This profile constrains the Immunization resource for the purpos
 * vaccineCode.coding[sctVaccines] from SctCovid19Vaccines */
 //* vaccineCode.coding[icd11Vaccines] from Icd11Covid19Vaccines  icd11 has not been selected by SGS
 
-* vaccineCode from $eHDSIVaccine
+* vaccineCode from EHDSIVaccine
 * vaccineCode.text ^short = "Name of the vaccine" // brandName
 
 * patient only Reference(PatientXpandh)

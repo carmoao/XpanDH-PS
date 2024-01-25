@@ -22,10 +22,10 @@ copyright: >-
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.uv.ips: current
+  hl7.fhir.uv.ips: 1.1.0
   # hl7.fhir.us.mcode: current # to be removed if no more needed
   # hl7.fhir.eu.laboratory: current
-  hl7.eu.fhir.xpandh: dev
+  hl7.eu.fhir.xpandh: current
   hl7.fhir.extensions.r5: 4.0.1
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -66,8 +66,24 @@ pages:
 #
 parameters:
 #  produce-jekyll-data: true
-#  special-url:
-#    - https://spor.ema.europa.eu/v1/lists/100000000004
+  special-url:
+    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownAllergy
+    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownDevice
+    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownMedication
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIReactionAllergy
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIActiveIngredient
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAllergenNoDrug
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAbsentOrUnknownAllergy
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAbsentOrUnknownProblem
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIIllnessandDisorder
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIRareDisease
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISeverity
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIVaccine
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIDoseForm
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIMedicalDevice
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISubstance
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIBloodGroup
+    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISocialHistory
 
   apply-contact: true
   apply-jurisdiction: true

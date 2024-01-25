@@ -23,8 +23,7 @@ Alias: $spor = https://spor.ema.europa.eu/v1/organisations
 Alias: $jrc = https://covid-19-diagnostics.jrc.ec.europa.eu/devices
 
 // Value Sets
-Alias: $eHDSIReactionAllergy = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIReactionAllergy
-
+/* Alias: $eHDSIReactionAllergy = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIReactionAllergy
 Alias: $eHDSIActiveIngredient = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIActiveIngredient
 Alias: $eHDSIAllergenNoDrug = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAllergenNoDrug
 Alias: $eHDSIAbsentOrUnknownAllergy = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAbsentOrUnknownAllergy
@@ -37,7 +36,7 @@ Alias: $eHDSIDoseForm = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIDoseForm
 Alias: $eHDSIMedicalDevice = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIMedicalDevice
 Alias: $eHDSISubstance = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISubstance
 Alias: $eHDSIBloodGroup = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIBloodGroup
-Alias: $eHDSISocialHistory = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISocialHistory
+Alias: $eHDSISocialHistory = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISocialHistory */
 
 
 //----------- Profiles

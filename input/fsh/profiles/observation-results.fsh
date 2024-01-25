@@ -30,4 +30,4 @@ Description: "This profile constrains the Observation resource to represent vari
 * ^experimental = false
 * ^purpose = "This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary."
 * code = $loinc#34530-6
-* valueCodeableConcept from $eHDSIBloodGroup
+* valueCodeableConcept from EHDSIBloodGroup

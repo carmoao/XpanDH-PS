@@ -6,7 +6,7 @@ Description: """This profile constrains the Condition resource for the purpose o
 * ^experimental = false
 * ^purpose = "This profile constrains the Condition resource for the purpose of the European patient summary."
 * code from EHDSIProblemCode (extensible)
-* severity from $eHDSISeverity
+* severity from EHDSISeverity
 * subject only Reference(PatientXpandh)
 * onset[x] only dateTime // is this needed ?
 

@@ -10,7 +10,7 @@ Description: "This profile constrains the Observation resource to represent vari
 * category only $CodeableConcept-uv-ips
 * category = $observation-category#social-history
 * code only $CodeableConcept-uv-ips
-* code from $eHDSISocialHistory
+* code from EHDSISocialHistory
 * subject 1.. MS
 * subject only Reference(PatientXpandh)
   * reference 1.. 

@@ -18,4 +18,4 @@ Description: """This profile constrains the Device resource for the purpose of t
 * ^purpose = "This profile constrains the Device resource for the purpose of the European patient summary."
 * deviceName 0..
   * name ^short = "The name of the device"
-* type from $eHDSIMedicalDevice
+// TEST * type from EHDSIMedicalDevice
