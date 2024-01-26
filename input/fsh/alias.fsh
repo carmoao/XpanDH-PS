@@ -38,6 +38,9 @@ Alias: $eHDSISubstance = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISubstance
 Alias: $eHDSIBloodGroup = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIBloodGroup
 Alias: $eHDSISocialHistory = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISocialHistory */
 
+// --- Data type profiles
+Alias: $Address-eu = http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu
+Alias: $HumanName-eu = http://hl7.eu/fhir/laboratory/StructureDefinition/HumanName-eu
 
 //----------- Profiles
 Alias: $Observation-results-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips

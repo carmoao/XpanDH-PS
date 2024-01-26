@@ -1,5 +1,7 @@
 
+RuleSet: ImposeProfile ( profile, index )
 
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile][{index}].valueCanonical = {profile}
 
 RuleSet: SectionComRules (short, def, code)
 
