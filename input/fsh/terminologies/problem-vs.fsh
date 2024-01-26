@@ -4,8 +4,8 @@ Title:	       "Problems or no known or unknown conditions"
 Description:   """Problems or no known or unknown conditions""" 
 * ^experimental = false
 
-// TEST * codes from valueset EHDSIIllnessandDisorder
-// TEST * codes from valueset EHDSIRareDisease
+* codes from valueset EHDSIIllnessandDisorder
+* codes from valueset EHDSIRareDisease
 * codes from valueset EHDSIAbsentOrUnknownProblem 
 
 ValueSet:      EHDSICondition
@@ -14,6 +14,5 @@ Title:	       "Conditions"
 Description:   """Conditions""" 
 * ^experimental = false
 
-// TEST * codes from valueset EHDSIIllnessandDisorder
-// TEST * codes from valueset EHDSIRareDisease
-* codes from valueset EHDSIAbsentOrUnknownProblem  // ADDED FOR TEST TO BE REMOVED
+* codes from valueset EHDSIIllnessandDisorder
+* codes from valueset EHDSIRareDisease

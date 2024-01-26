@@ -4,7 +4,7 @@ Title:	       "Allergens or no known or unknown conditions"
 Description:   """Allergens or no known or unknown conditions""" 
 * ^experimental = false
 * codes from valueset EHDSIAllergenNoDrug
-// TEST * codes from valueset EHDSIActiveIngredient
+* codes from valueset EHDSIActiveIngredient
 // ADD SUBSTANCES
 * codes from valueset EHDSIAbsentOrUnknownAllergy
 
@@ -14,5 +14,5 @@ Title:	       "Allergens"
 Description:   """Allergens""" 
 * ^experimental = false
 * codes from valueset EHDSIAllergenNoDrug
-// TEST * codes from valueset EHDSIActiveIngredient
+* codes from valueset EHDSIActiveIngredient
 // ADD SUBSTANCES

@@ -22,11 +22,11 @@ Title:    "Medication"
 Description: """This profile constrains the Medication resource for the purpose of the European patient summary."""
 * ^experimental = false
 * ^purpose = "This profile constrains the Medication resource for the purpose of the European patient summary."
-// TEST * code from EHDSIActiveIngredient (preferred)
+* code from EHDSIActiveIngredient (preferred)
 * code ^short = "Any kind of product code (including ATC)"
 // ADD ADDITIONAL VALUE SET
 * ingredient
-// TEST   * itemCodeableConcept from EHDSISubstance (preferred)
+  * itemCodeableConcept from EHDSISubstance (preferred)
   * itemReference only Reference (MedicationXpandh)
   * isActive ^short = "Usually true"
   * strength ^short = "A kind of strength"

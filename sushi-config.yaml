@@ -70,20 +70,23 @@ parameters:
     - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownAllergy
     - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownDevice
     - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownMedication
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIReactionAllergy
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIActiveIngredient
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAllergenNoDrug
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAbsentOrUnknownAllergy
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIAbsentOrUnknownProblem
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIIllnessandDisorder
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIRareDisease
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISeverity
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIVaccine
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIDoseForm
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIMedicalDevice
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISubstance
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIBloodGroup
-    - http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSISocialHistory
+    - http://fhir.ehdsi.eu/mvc/eHDSIReactionAllergy
+    - http://fhir.ehdsi.eu/mvc/eHDSIActiveIngredient
+    - http://fhir.ehdsi.eu/mvc/eHDSIAllergenNoDrug
+    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownAllergy
+    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownProblem
+    - http://fhir.ehdsi.eu/mvc/eHDSIIllnessandDisorder
+    - http://fhir.ehdsi.eu/mvc/eHDSIRareDisease
+    - http://fhir.ehdsi.eu/mvc/eHDSISeverity
+    - http://fhir.ehdsi.eu/mvc/eHDSIVaccine
+    - http://fhir.ehdsi.eu/mvc/eHDSIDoseForm
+    - http://fhir.ehdsi.eu/mvc/eHDSIMedicalDevice
+    - http://fhir.ehdsi.eu/mvc/eHDSISubstance
+    - http://fhir.ehdsi.eu/mvc/eHDSIBloodGroup
+    - http://fhir.ehdsi.eu/mvc/eHDSISocialHistory
+
+  path-resource:
+    - input/terminologies
 
   apply-contact: true
   apply-jurisdiction: true
@@ -169,6 +172,16 @@ menu:
 #    exampleBoolean: true
 #  Patient/bad-example: omit
 
+resources:
+  ValueSet/eHDSIMedicalDevice:
+    name: Medical Device
+    description: Medical Device
+
+  ValueSet/eHDSIActiveIngredient:
+    name: Active Ingredient
+    description: Active Ingredient
+  
+#  Patient/bad-example: omit
 
 #
 # Groups can control certain aspects of the IG generation.  The IG

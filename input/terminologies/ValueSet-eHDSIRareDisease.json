@@ -5,7 +5,7 @@
   "id": "eHDSIRareDisease",
   "title": "Rare Disease",
   "description": "The Value Set is used to describe the problems and medication reasons.",
-  "url": "http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIRareDisease",
+  "url": "http://fhir.ehdsi.eu/mvc/eHDSIRareDisease",
   "experimental": false,
   "compose": {
     "include": [
