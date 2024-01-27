@@ -181,6 +181,28 @@ resources:
   ValueSet/eHDSIActiveIngredient:
     name: Active Ingredient
     description: Active Ingredient
+
+#  ConceptMap/labRpt2FHIR-eu-ps:
+#    name: A - Patient Summary model to this guide
+#    description: It shows how the Patient Summary data set defined by the EU eHN guidelines is mapped into this guide.
+
+#  ConceptMap/payer2FHIR-eu-ps:
+#    name: A.1.3 - Health insurance and payment information model to this guide
+#    description: It shows how the A.1.3 - Health insurance and payment information data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/subject2FHIR-eu-ps:
+    name: A.1.1, A.1.2 - Subject of care model to this guide
+    description: It shows how the Subject data set defined by the EU eHN guidelines is mapped into this guide.
+#
+#  ConceptMap/author2FHIR-eu-ps:
+#    name: A.1.5 - Author model to this guide
+#    description: It shows how the A.1.5 - Author data set defined by the EU eHN guidelines is mapped into this guide.
+#
+#  ConceptMap/legalAuth2FHIR-eu-ps:
+#    name: A.1.6 - Legal authenticator model to this guide
+#    description: It shows how the A.1.6 - Legal authenticator data set defined by the EU eHN guidelines is mapped into this guide.
+#
+
   
 #  Patient/bad-example: omit
 
@@ -194,14 +216,25 @@ resources:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-# groups:
-#  eHNGuidelines:
-#    name:  eHN ps Guidelines
-#    description: Logical models representing the eHN ps Guidelines
-#    resources:
-#      - StructureDefinition/PatientSummary
-#      - StructureDefinition/psEncounter
 
+groups:
+  eHNGuidelines:
+    name:  eHN Patient Summary Guidelines
+    description: Logical models representing the eHN Patient Summary Guidelines
+    resources:
+      - StructureDefinition/Subject
+#      - StructureDefinition/Author
+#      - StructureDefinition/LegalAuthenticator
+#      - StructureDefinition/Payer
+
+  logicalModelsMaps:
+    name:  eHN Logical Model mappings
+    description: Concept Maps describing how the eHN Laboratory Guidelines are supposed to be implemented by using this guide
+    resources:
+#     - ConceptMap/payer2FHIR-eu-ps
+      - ConceptMap/subject2FHIR-eu-ps
+#     - ConceptMap/author2FHIR-eu-ps
+#     - ConceptMap/legalAuth2FHIR-eu-ps
 
 #
 # The ImplementationGuide resource defines several other properties
