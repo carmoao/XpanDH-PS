@@ -223,7 +223,7 @@ groups:
     description: Logical models representing the eHN Patient Summary Guidelines
     resources:
       - StructureDefinition/Subject
-#      - StructureDefinition/Author
+      - StructureDefinition/PatientSummary
 #      - StructureDefinition/LegalAuthenticator
 #      - StructureDefinition/Payer
 
