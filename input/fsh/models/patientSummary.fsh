@@ -20,24 +20,24 @@ Preferred system: ISO 8601"""
 * header.additionalInfo.reference 0..* Reference "A.1.6.1 External reference" """A.1.6.1 External reference -  A reference leading to Clinical Practice Guidelines (CPG), emergency and anesthesia guidelines or other clinical relevant guidelines. This should be used only for providing specific guidance which may not be readily available to the health professional caring for the patient."""				
 * header.additionalInfo.relatedWith 0..* Reference "A.1.6.2 Related with" """A.1.6.2 Related with - Identify the entry or entries of this Patient Summary for which this additional information relates with, for example a link between a rare disease problem (section A.2.3.1) and guidelines for that particular rare disease (this section)."""				
 * body 1..1 BackboneElement "A.2 - Patient summary body data elements" """A.2 - Patient summary body data elements"""				
-* alerts 1..1 BackboneElement "A.2.1 - Alerts" """A.2.1 - Alerts"""				
-* allergy 0..1 BackboneElement "A.2.1.1 - Allergy" """A.2.1.1 - Allergy"""				
-* alert 0..1 BackboneElement "A.2.1.2 - Medical alert information (other alerts not included in allergies)" """A.2.1.2 - Medical alert information (other alerts not included in allergies)"""				
-* medicalHistory 1..1 BackboneElement "A.2.2 - Medical history" """A.2.2 - Medical history"""				
-* vaccination 0..1 BackboneElement "A.2.2.1 - Vaccination/ prophylaxis information" """A.2.2.1 - Vaccination/ prophylaxis information"""				
-* inactiveProblem 0..1 BackboneElement "A.2.2.2 - Resolved, closed or inactive problems" """A.2.2.2 - Resolved, closed or inactive problems"""				
-* anamnesis 0..1 BackboneElement "A.2.2.3 - Medical history" """A.2.2.3 - Medical history"""				
-* medicalDevices 1..1 BackboneElement "A.2.3.2 - Medical devices and implants" """A.2.3.2 - Medical devices and implants"""				
-* procedures 1..1 BackboneElement "A.2.3.3 - Procedures" """A.2.3.3 - Procedures"""				
-* functionalStatus 0..1 BackboneElement "A.2.3.4 - Functional status" """A.2.3.4 - Functional status"""				
-* medicationSummary 1..1 BackboneElement "A.2.4 - Medication summary" """A.2.4 - Medication summary"""				
-* socialHistory 0..1 BackboneElement "A.2.5 - Social history" """A.2.5 - Social history"""				
-* pregnancyHistory 0..1 BackboneElement "A.2.6 Pregnancy history" """A.2.6 Pregnancy history"""				
-* results 0..1 BackboneElement "A.2.8 - Results" """A.2.8 - Results"""				
-* planOfCare 0..1 BackboneElement "A.2.9 - Plan of Care" """A.2.9 - Plan of Care"""				
-//--- END				
-//--- END				
-//--- END				
+* body.alerts 1..1 BackboneElement "A.2.1 - Alerts" """A.2.1 - Alerts"""				
+* body.alerts.allergy 0..1 BackboneElement "A.2.1.1 - Allergy" """A.2.1.1 - Allergy"""				
+* body.alerts.alert 0..1 BackboneElement "A.2.1.2 - Medical alert information (other alerts not included in allergies)" """A.2.1.2 - Medical alert information (other alerts not included in allergies)"""				
+* body.medicalHistory 1..1 BackboneElement "A.2.2 - Medical history" """A.2.2 - Medical history"""				
+* body.medicalHistory.vaccination 0..1 BackboneElement "A.2.2.1 - Vaccination/ prophylaxis information" """A.2.2.1 - Vaccination/ prophylaxis information"""				
+* body.medicalHistory.inactiveProblem 0..1 BackboneElement "A.2.2.2 - Resolved, closed or inactive problems" """A.2.2.2 - Resolved, closed or inactive problems"""				
+* body.medicalHistory.anamnesis 0..1 BackboneElement "A.2.2.3 - Medical history" """A.2.2.3 - Medical history"""				
+* body.medicalHistory.medicalDevices 1..1 BackboneElement "A.2.3.2 - Medical devices and implants" """A.2.3.2 - Medical devices and implants"""				
+* body.medicalHistory.procedures 1..1 BackboneElement "A.2.3.3 - Procedures" """A.2.3.3 - Procedures"""				
+* body.medicalHistory.functionalStatus 0..1 BackboneElement "A.2.3.4 - Functional status" """A.2.3.4 - Functional status"""				
+* body.medicationSummary 1..1 BackboneElement "A.2.4 - Medication summary" """A.2.4 - Medication summary"""				
+* body.socialHistory 0..1 BackboneElement "A.2.5 - Social history" """A.2.5 - Social history"""				
+* body.pregnancyHistory 0..1 BackboneElement "A.2.6 Pregnancy history" """A.2.6 Pregnancy history"""				
+* body.patientData 0..1 BackboneElement "A.2.7 - Patient provided data" """A.2.7 - Patient provided data"""				
+* body.patientData.travelHistory 0..1 BackboneElement "A.2.7.1 - Travel history" """A.2.7.1 - Travel history"""				
+* body.patientData.advanceDirective 0..1 BackboneElement "A.2.7.2 - Advance Directive" """A.2.7.2 - Advance Directive"""				
+* body.results 0..1 BackboneElement "A.2.8 - Results" """A.2.8 - Results"""				
+* body.planOfCare 0..1 BackboneElement "A.2.9 - Plan of Care" """A.2.9 - Plan of Care"""				
 //--- END				
 //--- END				
 //--- END				
@@ -53,7 +53,6 @@ Preferred system: ISO 8601"""
 //--------------------------------------------------------------------------------				
 //  Logical Model - Comments				
 //--------------------------------------------------------------------------------				
-				
 				
 				
 				
