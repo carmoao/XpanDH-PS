@@ -16,14 +16,31 @@ Preferred system: ISO 8601"""
 * header.participant 1..* BackboneElement "A.1.5 Author and Organisation" """A.1.5 Author and Organisation"""				
 * header.participant.author 1..* Identifier "A.1.5.1 Author organization" """A.1.5.1 Author organization - At least one Author and Organisation shall be listed. In the event that there is no Author, at least one Organisation shall be listed This Author should be able to provide further information on the provenance of the data present in the patient summary. Different authors contributing to individual sections and/or entries could be provided at the relevant level."""				
 * header.participant.legalAuth 0..* CodeableConcept "A.1.5.2 Legal authenticator" """A.1.5.2 Legal authenticator - Legal entity (Health Professional or Health Care Provider) who authenticated the Patient Summary"""				
-* additionalInfo 0..* BackboneElement "A.1.6 Additional information / Knowledge resources" """A.1.6 Additional information / Knowledge resources - """				
-* additionalInfo.reference 0..* Reference "A.1.6.1 External reference" """A.1.6.1 External reference -  A reference leading to Clinical Practice Guidelines (CPG), emergency and anesthesia guidelines or other clinical relevant guidelines. This should be used only for providing specific guidance which may not be readily available to the health professional caring for the patient."""				
-* additionalInfo.relatedWith 0..* Reference "A.1.6.2 Related with" """A.1.6.2 Related with - Identify the entry or entries of this Patient Summary for which this additional information relates with, for example a link between a rare disease problem (section A.2.3.1) and guidelines for that particular rare disease (this section)."""				
+* header.additionalInfo 0..* BackboneElement "A.1.6 Additional information / Knowledge resources" """A.1.6 Additional information / Knowledge resources - """				
+* header.additionalInfo.reference 0..* Reference "A.1.6.1 External reference" """A.1.6.1 External reference -  A reference leading to Clinical Practice Guidelines (CPG), emergency and anesthesia guidelines or other clinical relevant guidelines. This should be used only for providing specific guidance which may not be readily available to the health professional caring for the patient."""				
+* header.additionalInfo.relatedWith 0..* Reference "A.1.6.2 Related with" """A.1.6.2 Related with - Identify the entry or entries of this Patient Summary for which this additional information relates with, for example a link between a rare disease problem (section A.2.3.1) and guidelines for that particular rare disease (this section)."""				
+* body 1..1 BackboneElement "A.2 - Patient summary body data elements" """A.2 - Patient summary body data elements"""				
+* alerts 1..1 BackboneElement "A.2.1 - Alerts" """A.2.1 - Alerts"""				
+* allergy 0..1 BackboneElement "A.2.1.1 - Allergy" """A.2.1.1 - Allergy"""				
+* alert 0..1 BackboneElement "A.2.1.2 - Medical alert information (other alerts not included in allergies)" """A.2.1.2 - Medical alert information (other alerts not included in allergies)"""				
+* medicalHistory 1..1 BackboneElement "A.2.2 - Medical history" """A.2.2 - Medical history"""				
+* vaccination 0..1 BackboneElement "A.2.2.1 - Vaccination/ prophylaxis information" """A.2.2.1 - Vaccination/ prophylaxis information"""				
+* inactiveProblem 0..1 BackboneElement "A.2.2.2 - Resolved, closed or inactive problems" """A.2.2.2 - Resolved, closed or inactive problems"""				
+* anamnesis 0..1 BackboneElement "A.2.2.3 - Medical history" """A.2.2.3 - Medical history"""				
+* medicalDevices 1..1 BackboneElement "A.2.3.2 - Medical devices and implants" """A.2.3.2 - Medical devices and implants"""				
+* procedures 1..1 BackboneElement "A.2.3.3 - Procedures" """A.2.3.3 - Procedures"""				
+* functionalStatus 0..1 BackboneElement "A.2.3.4 - Functional status" """A.2.3.4 - Functional status"""				
+* medicationSummary 1..1 BackboneElement "A.2.4 - Medication summary" """A.2.4 - Medication summary"""				
+* socialHistory 0..1 BackboneElement "A.2.5 - Social history" """A.2.5 - Social history"""				
+* pregnancyHistory 0..1 BackboneElement "A.2.6 Pregnancy history" """A.2.6 Pregnancy history"""				
+* results 0..1 BackboneElement "A.2.8 - Results" """A.2.8 - Results"""				
+* planOfCare 0..1 BackboneElement "A.2.9 - Plan of Care" """A.2.9 - Plan of Care"""				
 //--- END				
 //--- END				
 //--- END				
-				
-				
+//--- END				
+//--- END				
+//--- END				
 				
 				
 				
@@ -36,27 +53,6 @@ Preferred system: ISO 8601"""
 //--------------------------------------------------------------------------------				
 //  Logical Model - Comments				
 //--------------------------------------------------------------------------------				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-//--- END				
-//--- END				
-//--- END				
-				
-				
-				
-				
-				
 				
 				
 				
