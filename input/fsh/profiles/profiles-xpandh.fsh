@@ -47,24 +47,6 @@ Description: "This profile constrains the MedicationStatement IPS FHIR profile f
 * reasonReference only Reference(ConditionXpandh or Observation or DiagnosticReport)
 * subject only Reference(PatientXpandh) */
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  FlagXpandh
-Parent:   Flag
-Id:       Flag-eu-xpandh
-Title:    "Flag"
-Description: "This profile constrains the Flag resource to represent alerts or warnings in FHIR for the purpose of the XpanDH project."
-//-------------------------------------------------------------------------------------------
-
-* extension contains $flag-detail named flagDetailExt 0..*
-* extension contains $flag-priority named flagPriorityExt 0..1
-* extension[flagDetailExt]
-* extension[flagPriorityExt]
-* status MS
-* code MS
-* subject MS
-* subject only Reference(PatientXpandh)
-
-
 /* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ConditionXpandh
 Parent:   $Condition-uv-ips

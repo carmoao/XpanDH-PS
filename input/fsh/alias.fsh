@@ -1,5 +1,10 @@
 //============== ALIAS ===============
 
+//---- Extensions
+
+Alias: $immunization-administeredProduct-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct
+Alias: $immunization-basedOn-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn
+
 //------- Code Systems
 Alias: $loinc = http://loinc.org
 Alias: $v3-ActClass = http://terminology.hl7.org/CodeSystem/v3-ActClass
@@ -21,6 +26,7 @@ Alias: $istat-unitaAmministrativeTerritoriali = http://terminology.hl7.it/CodeSy
 Alias: $minsan-regione = http://terminology.hl7.it/CodeSystem/minsan-regione
 Alias: $spor = https://spor.ema.europa.eu/v1/organisations
 Alias: $jrc = https://covid-19-diagnostics.jrc.ec.europa.eu/devices
+Alias: $v2-0443 = http://terminology.hl7.org/CodeSystem/v2-0443
 
 // Value Sets
 /* Alias: $eHDSIReactionAllergy = http://hl7.eu/fhir/ig/xpandh/ValueSet/eHDSIReactionAllergy

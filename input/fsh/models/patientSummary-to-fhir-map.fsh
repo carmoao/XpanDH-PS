@@ -11,11 +11,11 @@ Usage: #definition
 * experimental = true					
 * description = "eHN Patient Summary to this guide Map"					
 * purpose = "It shows how the Patient Summary data set defined by the EU eHN guidelines is mapped into this guide"					
-* sourceUri = "http://hl7.eu/fhir/laboratory/StructureDefinition/PatientSummary"					
-* targetUri = "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-ps"					
+* sourceUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/PatientSummary"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Bundle-eu-ps"					
 					
-* group[+].source = "http://hl7.eu/fhir/laboratory/StructureDefinition/PatientSummary"					
-* group[=].target = "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-ps"					
+* group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/PatientSummary"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Composition-eu-ps"					
 					
 * group[=].element[+].code = #PatientSummary.header					
 * group[=].element[=].display = "A.1 Report header data elements"					
@@ -24,7 +24,7 @@ Usage: #definition
 * group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #PatientSummary.header.subject					
-* group[=].element[=].display = "A.1.1 - A1.2 Patient/subject"					
+* group[=].element[=].display = "A.1.1 A1.2 Patient/subject"					
 * group[=].element[=].target.code = #Composition.subject					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
@@ -96,79 +96,91 @@ Usage: #definition
 * group[=].element[=].target.equivalence = #unmatched					
 * group[=].element[=].target.comment = "Covered by other resources"					
 * group[=].element[+].code = #PatientSummary.body					
-* group[=].element[=].display = "A.2 - Patient summary body data elements"					
+* group[=].element[=].display = "A.2 Patient summary body data elements"					
 * group[=].element[=].target.code = #Composition.section					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #PatientSummary.body.alerts					
-* group[=].element[=].display = "A.2.1 - Alerts"					
+* group[=].element[=].display = "A.2.1 Alerts"					
 * group[=].element[=].target.code = #Composition.section					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #PatientSummary.body.alerts.allergy					
-* group[=].element[=].display = "A.2.1.1 - Allergy"					
+* group[=].element[=].display = "A.2.1.1 Allergy"					
 * group[=].element[=].target.code = #Composition.section:sectionAllergies.entry					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.alerts.alert					
-* group[=].element[=].display = "A.2.1.2 - Medical alert information (other alerts not included in allergies)"					
-* group[=].element[=].target.code = #Composition.section					
+* group[=].element[=].display = "A.2.1.2 Medical alert information (other alerts not included in allergies)"					
+* group[=].element[=].target.code = #Composition.section:sectionAlert					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "TBD"					
+					
+* group[=].element[+].code = #PatientSummary.body.alerts.alert.description					
+* group[=].element[=].display = "A.2.1.2.1 Healthcare alert description"					
+* group[=].element[=].target.code = #Composition.section:sectionAlert.text					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+					
+* group[=].element[+].code = #PatientSummary.body.alerts.alert.description					
+* group[=].element[=].display = "A.2.1.2.1 Healthcare alert description"					
+* group[=].element[=].target.code = #Composition.section:sectionAlert.entry.code.text					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "entry of type Flag"					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory					
-* group[=].element[=].display = "A.2.2 - Medical history"					
+* group[=].element[=].display = "A.2.2 Medical history"					
 * group[=].element[=].target.code = #Composition.section					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.vaccination					
-* group[=].element[=].display = "A.2.2.1 - Vaccination/ prophylaxis information"					
-* group[=].element[=].target.code = #Composition.section:sectionImmunizations					
+* group[=].element[=].display = "A.2.2.1 Vaccination/ prophylaxis information"					
+* group[=].element[=].target.code = #Composition.section:sectionImmunizations.entry					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.inactiveProblem					
-* group[=].element[=].display = "A.2.2.2 - Resolved, closed or inactive problems"					
-* group[=].element[=].target.code = #Composition.section:sectionPastIllnessHx					
+* group[=].element[=].display = "A.2.2.2 Resolved, closed or inactive problems"					
+* group[=].element[=].target.code = #Composition.section:sectionPastIllnessHx.entry					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.anamnesis					
-* group[=].element[=].display = "A.2.2.3 - Medical history"					
+* group[=].element[=].display = "A.2.2.3 Medical history"					
 * group[=].element[=].target.code = #Composition					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.medicalDevices					
-* group[=].element[=].display = "A.2.3.2 - Medical devices and implants"					
+* group[=].element[=].display = "A.2.3.2 Medical devices and implants"					
 * group[=].element[=].target.code = #Composition.ÿsection:sectionMedicalDevices					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.procedures					
-* group[=].element[=].display = "A.2.3.3 - Procedures"					
+* group[=].element[=].display = "A.2.3.3 Procedures"					
 * group[=].element[=].target.code = #Composition.section:sectionProceduresHx					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.functionalStatus					
-* group[=].element[=].display = "A.2.3.4 - Functional status"					
+* group[=].element[=].display = "A.2.3.4 Functional status"					
 * group[=].element[=].target.code = #Composition.section:sectionFunctionalStatus					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.medicationSummary					
-* group[=].element[=].display = "A.2.4 - Medication summary"					
+* group[=].element[=].display = "A.2.4 Medication summary"					
 * group[=].element[=].target.code = #Composition.section:sectionMedications					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.socialHistory					
-* group[=].element[=].display = "A.2.5 - Social history"					
+* group[=].element[=].display = "A.2.5 Social history"					
 * group[=].element[=].target.code = #Composition.section:sectionSocialHistory					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
@@ -180,31 +192,31 @@ Usage: #definition
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.patientData					
-* group[=].element[=].display = "A.2.7 - Patient provided data"					
+* group[=].element[=].display = "A.2.7 Patient provided data"					
 * group[=].element[=].target.code = #Composition.section					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #PatientSummary.body.patientData.travelHistory					
-* group[=].element[=].display = "A.2.7.1 - Travel history"					
+* group[=].element[=].display = "A.2.7.1 Travel history"					
 * group[=].element[=].target.code = #Composition.section:sectionTravelHx					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #PatientSummary.body.patientData.advanceDirective					
-* group[=].element[=].display = "A.2.7.2 - Advance Directive"					
+* group[=].element[=].display = "A.2.7.2 Advance Directive"					
 * group[=].element[=].target.code = #Composition.section:sectionAdvanceDirectives					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.results					
-* group[=].element[=].display = "A.2.8 - Results"					
+* group[=].element[=].display = "A.2.8 Results"					
 * group[=].element[=].target.code = #Composition.section:sectionResults					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.planOfCare					
-* group[=].element[=].display = "A.2.9 - Plan of Care"					
+* group[=].element[=].display = "A.2.9 Plan of Care"					
 * group[=].element[=].target.code = #Composition.section:sectionPlanOfCare					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
@@ -213,27 +225,15 @@ Usage: #definition
 //---END					
 //---END					
 //---END					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
 					
 					
 					

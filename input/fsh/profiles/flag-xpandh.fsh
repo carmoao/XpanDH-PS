@@ -10,7 +10,6 @@ Description: "This profile constrains the Flag resource to represent alerts or w
 * extension contains $flag-priority named flagPriorityExt 0..1
 * extension[flagDetailExt]
 * extension[flagPriorityExt]
-* status MS
-* code MS
-* subject MS
+* status ^short = "Alert status"
+* code ^short = "Coded or textual message to display to user."
 * subject only Reference(PatientPsXpandh)

@@ -27,7 +27,7 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 * entry[imagingstudy].resource only $ImagingStudyXpandh */
 
 * entry[immunization].resource 1..
-* entry[immunization].resource only ImmunizationXpandh
+* entry[immunization].resource only ImmunizationPsXpandh
 
 /* * entry[media].resource 1..
 * entry[media].resource only $Media-observation-uv-ips */
