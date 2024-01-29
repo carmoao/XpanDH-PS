@@ -109,7 +109,7 @@ Usage: #definition
 					
 * group[=].element[+].code = #PatientSummary.body.alerts.allergy					
 * group[=].element[=].display = "A.2.1.1 - Allergy"					
-* group[=].element[=].target.code = #Composition.section:sectionAllergies					
+* group[=].element[=].target.code = #Composition.section:sectionAllergies.entry					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
