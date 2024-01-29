@@ -234,6 +234,7 @@ groups:
 #     - ConceptMap/payer2FHIR-eu-ps
       - ConceptMap/subject2FHIR-eu-ps
       - ConceptMap/patientSummary2FHIR-eu-ps
+      - ConceptMap/allergy2FHIR-eu-ps
 #     - ConceptMap/author2FHIR-eu-ps
 #     - ConceptMap/legalAuth2FHIR-eu-ps
 
