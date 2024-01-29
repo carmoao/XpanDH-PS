@@ -75,6 +75,24 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 
 The field \"alerts\" was originally defined to include all the important and objective medical information that should be highlighted (such as allergies, thrombosis risk, immune deficit …etc). When defining the content only allergies and intolerance to drugs appear to be the common understanding and the easiest to be transferred. A lot of surveys are being made in different countries (not only in Europe) to make a more evidence-based definition of what should represented and should not by the concept “alerts”, hence not enough information could be provided to take a further decision. As eHDSI\’s intention is not to duplicate information, this shall not be repeated. Alerts are difficult to represent since they are contextual. Alerts may be represented as severe or life-threatening allergies or other adverse reactions. Another area are certain selected procedures and implanted devices. The section Allergies and Other Adverse Reactions contains the medical alerts as well, based on the severity, and their representation becomes a Country B choice."""
   * entry[allergyOrIntolerance] only Reference (AllergyIntoleranceXpandh)
+
+* section contains alertSection ..1
+* section[alertSection]
+  * insert SectionComRules ( 
+    Health Concern Section, // SHORT
+      This section contains data describing an interest or worry about a health state or process that could possibly require attention\, intervention\, or management. A Health Concern is a health related matter that is of interest\, importance or worry to someone\, who may be the patient\, patient's family or patient's health care provider. Health concerns are derived from a variety of sources within an EHR\, such as Problem List\, Family History\, Social Histor\, Social Worker Note\, etc. Health concerns can be medical\, surgical\, nursing\, allied health or patient-reported concerns. Problem Concerns are a subset of Health Concerns that have risen to the level of importance that they typically would belong on a classic “Problem List”\, such as “Diabetes Mellitus” or “Family History of Melanoma” or “Tobacco abuse”. These are of broad interest to multiple members of the care team. Examples of other Health Concerns that might not typically be considered a Problem Concern include “Risk of Hyperkalemia” for a patient taking an ACE-inhibitor medication\, or “Transportation difficulties” for someone who doesn't drive and has trouble getting to appointments\, or “Under-insured” for someone who doesn't have sufficient insurance to properly cover their medical needs such as medications. These are typically most important to just a limited number of care team members, // DESC
+      http://loinc.org#75310-3 )   // CODE
+  * entry 0..
+  * insert SectionEntrySliceComRules(Alerts, Alerts)
+  // entry slices
+  * insert SectionEntrySliceDefRules (flag, 0.. , Flags , Flags , FlagPsXpandh)
+  * insert SectionEntrySliceDefRules (detectedIssue, 0.. ,  Detected Issue,
+    Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient; e.g. Drug-drug interaction\, Ineffective treatment frequency\, Procedure-condition conflict\, etc. ,
+    DetectedIssue)
+  * insert SectionEntrySliceDefRules (riskAssessment, 0.. , Risk Assessment,
+    An assessment of the likely outcomes for a patient or other subject as well as the likelihood of each outcome. ,
+    RiskAssessment)
+
 * section[sectionProblems].entry[problem] only Reference (ConditionXpandh)
   * ^short = "eHDSI Active Problems"
   * ^definition = """The active problem section contains a narrative description of the conditions currently being monitored for the patient. It includes entries for patient conditions as described in the Entry.
