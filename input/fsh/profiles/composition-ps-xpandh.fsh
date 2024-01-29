@@ -1,10 +1,10 @@
 Profile: CompositionPsXpandh
 Parent: $Composition-uv-ips
 Id: Composition-ps-eu-xpandh
-Title: "Composition: Patient Summary"
-Description: "Clinical document used to represent a Patient Summary (HDR) for the scope of the XpanDH project."
-* ^publisher = "XpanDH Project"
-* ^copyright = "XpanDH Project"
+Title: "Composition (EU PS)"
+Description: "Clinical document used to represent a Patient Summary for the scope of this project."
+/* * ^publisher = "XpanDH Project"
+* ^copyright = "XpanDH Project" */
 * . ^short = "Patient Summary composition"
 * . ^definition = "Patient Summary composition. \r\nA composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. \r\nWhile a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained."
 
@@ -122,5 +122,10 @@ This section is used in eHDSI only for the purpose of providing the Expected Dat
   * ^short = "eHDSI Advance Directives Section"
   * ^definition = """The advance directive section contains a narrative description of patient's advance directive. The optional author and informant elements are used when necessary to convey the provenance and authoring of the section content in case it is different from what is announced in the CDA header.
 Entries for references to consent and advance directive documents when known will be specified by future versions of this template."""
-
+* section[sectionAdvanceDirectives]
+  * ^short = "eHDSI Advance Directives Section"
+  * ^definition = """The advance directive section contains a narrative description of patient's advance directive. The optional author and informant elements are used when necessary to convey the provenance and authoring of the section content in case it is different from what is announced in the CDA header.
+Entries for references to consent and advance directive documents when known will be specified by future versions of this template."""
+* section contains sectionTravelHx ..1
+  * insert SectionComRules ( Travel History Section, This Section describes the travel history relevant for the Patient Summary\, e.g.recent travel in a region of high prevalence of a specific infectious disease like Malaria,  http://loinc.org#10182-4 )
 

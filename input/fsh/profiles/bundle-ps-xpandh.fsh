@@ -1,7 +1,7 @@
 Profile: BundlePsXpandh
 Parent: $Bundle-uv-ips
 Id: Bundle-ps-xpandh
-Title: "Bundle: EU Patient Summary"
+Title: "Bundle (EU PS)"
 Description: "Clinical document used to represent a Patient Summary for the scope of the XpanDH project."
 * ^publisher = "XpanDH Project"
 * ^copyright = "XpanDH Project"

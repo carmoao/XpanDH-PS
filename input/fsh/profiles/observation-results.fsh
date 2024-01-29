@@ -1,7 +1,7 @@
 Profile: ObservationResultsXpandh
 Parent: $Observation-results-uv-ips
 Id: Observation-results-xpandh
-Title:    "Observation Results"
+Title:    "Observation Results (EU PS)"
 Description: "This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary. This is the base profile from which the other results profiles are derived."
 * ^experimental = false
 * ^purpose = "This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary."

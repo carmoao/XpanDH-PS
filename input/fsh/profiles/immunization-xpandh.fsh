@@ -2,7 +2,7 @@
 Profile:  ImmunizationXpandh
 Parent:   $Immunization-uv-ips
 Id:       Immunization-xpandh
-Title:    "Immunization"
+Title:    "Immunization (EU PS)"
 Description: """This profile constrains the Immunization resource for the purpose of the European patient summary."""
 
 //-------------------------------------------------------------------------------------------

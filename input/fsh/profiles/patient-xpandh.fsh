@@ -2,7 +2,7 @@ Profile: PatientPsXpandh
 // Parent: http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab
 Parent: PatientXpandh
 Id: Patient-ps-xpandh
-Title: "Patient"
+Title: "Patient (EU PS)"
 Description: "This profile defines how to represent Patient in FHIR for the purpose of this guide"
 
 * insert ImposeProfile($Patient-uv-ips, 0)

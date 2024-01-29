@@ -18,7 +18,7 @@ Description: """This profile constrains the MedicationStatement resource for the
 Profile: MedicationXpandh
 Parent: $Medication-uv-ips
 Id: Medication-xpandh
-Title:    "Medication"
+Title:    "Medication (EU PS)"
 Description: """This profile constrains the Medication resource for the purpose of the European patient summary."""
 * ^experimental = false
 * ^purpose = "This profile constrains the Medication resource for the purpose of the European patient summary."

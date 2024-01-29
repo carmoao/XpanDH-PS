@@ -1,7 +1,7 @@
 Profile: EncounterXpandh
 Parent: Encounter 
 Id: Encounter-eu-xpandh
-Title:    "Encounter: HDR"
+Title:    "Encounter (HDR)"
 Description: "This profile defines how to represent Encounter in FHIR for the purpose of the XpanDH Hospital Discharge Report."
 * identifier ^short = "Identifier(s) by which this encounter is known."
 * status ^short = "Status of this Hospital stay"

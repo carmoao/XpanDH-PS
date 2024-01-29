@@ -3,7 +3,7 @@
 Profile:  PractitionerXpandh
 Parent:   http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips
 Id:       Practitioner-eu-xpandh
-Title:    "Practitioner"
+Title:    "Practitioner (EU PS)"
 Description: "This profile defines how to represent Practitioners in FHIR for the purpose of the XpanDH project."
 
 //-------------------------------------------------------------------------------------------

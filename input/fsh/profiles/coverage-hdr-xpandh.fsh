@@ -1,7 +1,7 @@
 Profile: CoverageHdrXpandh
 Parent: Coverage
 Id: coverage-ps-eu-xpandh
-Title: "Coverage: Encounter Payer"
+Title: "Coverage (EU PS)"
 Description: "Coverage used to represent the payer for this Encounter for the scope of the XpanDH project."
 
 

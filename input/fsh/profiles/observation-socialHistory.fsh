@@ -1,7 +1,7 @@
 Profile: ObservationSocialHistoryXpandh
 Parent: Observation
 Id: Observation-socialHistory-xpandh
-Title:    "Observation Social History"
+Title:    "Observation Social History (EU PS)"
 Description: "This profile constrains the Observation resource to represent various types of social history observations in a patient summary."
 * ^experimental = false
 * ^purpose = "This profile constrains the Observation resource to represent various types of social history observations in a patient summary."
