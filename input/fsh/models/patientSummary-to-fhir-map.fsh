@@ -179,6 +179,12 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
+* group[=].element[+].code = #PatientSummary.body.medicationSummary.medication					
+* group[=].element[=].display = "A.2.4.1 Current and relevant past medicines"					
+* group[=].element[=].target.code = #Composition.section:sectionMedications.entry					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #equivalent					
+					
 * group[=].element[+].code = #PatientSummary.body.socialHistory					
 * group[=].element[=].display = "A.2.5 Social history"					
 * group[=].element[=].target.code = #Composition.section:sectionSocialHistory					
@@ -221,12 +227,6 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-//---END					
-//---END					
-//---END					
-//---END					
-//---END					
-//---END					
 //---END					
 //---END					
 //---END					

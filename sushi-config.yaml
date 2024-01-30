@@ -182,27 +182,37 @@ resources:
     name: Active Ingredient
     description: Active Ingredient
 
-#  ConceptMap/labRpt2FHIR-eu-ps:
-#    name: A - Patient Summary model to this guide
-#    description: It shows how the Patient Summary data set defined by the EU eHN guidelines is mapped into this guide.
-
-#  ConceptMap/payer2FHIR-eu-ps:
-#    name: A.1.3 - Health insurance and payment information model to this guide
-#    description: It shows how the A.1.3 - Health insurance and payment information data set defined by the EU eHN guidelines is mapped into this guide.
+  ConceptMap/patientSummary2FHIR-eu-ps:
+    name: A - Patient Summary model to this guide
+    description: It shows how the Patient Summary data set defined by the EU eHN guidelines is mapped into this guide.
 
   ConceptMap/subject2FHIR-eu-ps:
     name: A.1.1, A.1.2 - Subject of care model to this guide
     description: It shows how the Subject data set defined by the EU eHN guidelines is mapped into this guide.
-#
-#  ConceptMap/author2FHIR-eu-ps:
-#    name: A.1.5 - Author model to this guide
-#    description: It shows how the A.1.5 - Author data set defined by the EU eHN guidelines is mapped into this guide.
-#
-#  ConceptMap/legalAuth2FHIR-eu-ps:
-#    name: A.1.6 - Legal authenticator model to this guide
-#    description: It shows how the A.1.6 - Legal authenticator data set defined by the EU eHN guidelines is mapped into this guide.
-#
+  
+  ConceptMap/allergy2FHIR-eu-ps:
+    name: A.2.1.1 - Allergy model to this guide
+    description: It shows how the A.2.1.1 Allergy data set defined by the EU eHN guidelines is mapped into this guide.
 
+  ConceptMap/vaccination2FHIR-eu-ps:
+    name: A.2.2.1 - Vaccination/prophylaxis information model to this guide
+    description: It shows how the A.2.2.1 - Vaccination/prophylaxis information data set defined by the EU eHN guidelines is mapped into this guide.
+
+  StructureDefinition/PatientSummary:
+    name: A - Patient Summary
+    description: A - Patient Summary. eHN guideline model.
+  
+  StructureDefinition/Subject:
+    name: A - Patient Summary
+    description: Patient or Subject of care. Sections A1.1 and A1.2 of the eHN guideline.
+ 
+  StructureDefinition/Allergy:
+    name: A.2.1.1 - Allergy
+    description: Allergy. Section A.2.1.1 of the eHN guideline.
+
+  StructureDefinition/Vaccination:
+    name: A.2.2.1 - Vaccination/prophylaxis information
+    description: Vaccination/prophylaxis information. Sections A.2.2.1 of the eHN guideline.
   
 #  Patient/bad-example: omit
 
@@ -222,8 +232,10 @@ groups:
     name:  eHN Patient Summary Guidelines
     description: Logical models representing the eHN Patient Summary Guidelines
     resources:
-      - StructureDefinition/Subject
       - StructureDefinition/PatientSummary
+      - StructureDefinition/Subject
+      - StructureDefinition/Allergy
+      - StructureDefinition/Vaccination
 #      - StructureDefinition/LegalAuthenticator
 #      - StructureDefinition/Payer
 
@@ -235,6 +247,7 @@ groups:
       - ConceptMap/subject2FHIR-eu-ps
       - ConceptMap/patientSummary2FHIR-eu-ps
       - ConceptMap/allergy2FHIR-eu-ps
+      - ConceptMap/vaccination2FHIR-eu-ps
 #     - ConceptMap/author2FHIR-eu-ps
 #     - ConceptMap/legalAuth2FHIR-eu-ps
 

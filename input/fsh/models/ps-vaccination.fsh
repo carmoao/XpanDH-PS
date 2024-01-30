@@ -5,7 +5,7 @@ Logical: VaccinationPsEhn
 Id: Vaccination				
 Title: "A.2.2.1 - Vaccination/ prophylaxis information"				
 Description:  """ Vaccination/ prophylaxis information. Sections A2.2.2.1 of the eHN guideline."""				
-* targetDisease 0..* CodeableConcept "A.2.2.1.1 Disease or agent targeted" """Disease or agent that the vaccination provides protection against ICD-10* - Preferred system(s): SNOMED CT GPS"""				
+* targetDisease 0..* CodeableConcept "A.2.2.1.1 Disease or agent targeted" """Disease or agent that the vaccination provides protection against - Preferred system(s):  ICD-10*, SNOMED CT GPS"""				
 * vaccine 0..* CodeableConcept "A.2.2.1.2 Vaccine/prophylaxis" """Generic description of the vaccine/prophylaxis or its component(s) - Preferred system(s): SNOMED CT GPS ATC* (IDMP, when available)"""				
 * productName 0..* string "A.2.2.1.3 Vaccine medicinal product name" """Brand name of the vaccine medicinal product.z"""		 		
 * productId 0..* CodeableConcept "A.2.2.1.3.1 Identifier of the vaccine medicinal product" """Identifier for the vaccine medicinal product. It could be MPID according to ISO 11615, EMA PMS ID and/or a national identifier. EMA PMS"""				

@@ -23,6 +23,14 @@ Preferred system: ISO 8601"""
 * body.alerts 1..1 BackboneElement "A.2.1 Alerts" """A.2.1 - Alerts"""				
 * body.alerts.allergy 0..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Allergy "A.2.1.1 Allergy" """A.2.1.1 - Allergy"""				
 * body.alerts.alert 0..* BackboneElement "A.2.1.2 Medical alert information (other alerts not included in allergies)" """A.2.1.2 - Medical alert information (other alerts not included in allergies)"""				
+* body.alerts.alert.description 0..* string "A.2.1.2.1 Healthcare alert description" """Description of medical alerts in textual format: any clinical information that is imperative to know so that the life or health of the patient does not come under threat. 
+Example 1: intolerance to aspirin due to gastrointestinal bleeding. 
+Example 2: intolerance to captopril because of cough (the patient is not allergic but can't tolerate it because of persistent cough)
+Example 3: the patient has a rare disease that requires special treatment
+Example 4: Airway Alert / Difficult Intubation
+Example 5: Diagnoses such as malignant hyperthermia, porphyria, and bleeding disvaccinations; special treatments like anticoagulants or immunosuppressants; implanted devices.
+Example 6: transplanted organs illustrate other information that has to be taken into  account in a healthcare contact.
+Example 7: participation in a clinical trial that has to be taken into account in a healthcare contact."""				
 * body.medicalHistory 1..1 BackboneElement "A.2.2 Medical history" """A.2.2 - Medical history"""				
 * body.medicalHistory.vaccination 0..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Vaccination "A.2.2.1 Vaccination/ prophylaxis information" """A.2.2.1 - Vaccination/ prophylaxis information"""				
 * body.medicalHistory.inactiveProblem 0..* BackboneElement "A.2.2.2 Resolved, closed or inactive problems" """A.2.2.2 - Resolved, closed or inactive problems"""				
@@ -31,6 +39,7 @@ Preferred system: ISO 8601"""
 * body.medicalHistory.procedures 1..1 BackboneElement "A.2.3.3 Procedures" """A.2.3.3 - Procedures"""				
 * body.medicalHistory.functionalStatus 0..1 BackboneElement "A.2.3.4 Functional status" """A.2.3.4 - Functional status"""				
 * body.medicationSummary 1..1 BackboneElement "A.2.4 Medication summary" """A.2.4 - Medication summary"""				
+* body.medicationSummary.medication 1..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine "A.2.4.1 Current and relevant past medicines" """Relevant prescribed medicines whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not, or medicines that influence current health status or are relevant to a clinical decision"""				
 * body.socialHistory 0..1 BackboneElement "A.2.5 Social history" """A.2.5 - Social history"""				
 * body.pregnancyHistory 0..1 BackboneElement "A.2.6 Pregnancy history" """A.2.6 Pregnancy history"""				
 * body.patientData 0..1 BackboneElement "A.2.7 Patient provided data" """A.2.7 - Patient provided data"""				
@@ -41,10 +50,8 @@ Preferred system: ISO 8601"""
 //--- END				
 //--- END				
 //--- END				
-				
-				
-				
-				
+//--- END				
+//--- END				
 				
 				
 				
@@ -53,7 +60,6 @@ Preferred system: ISO 8601"""
 //--------------------------------------------------------------------------------				
 //  Logical Model - Comments				
 //--------------------------------------------------------------------------------				
-				
 				
 				
 				
