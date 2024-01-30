@@ -15,7 +15,7 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 * entry[allergyintolerance].resource 1..
 * entry[allergyintolerance].resource only AllergyIntoleranceXpandh
 * entry[condition].resource 1..
-* entry[condition].resource only ConditionXpandh
+* entry[condition].resource only ConditionPsXpandh
 * entry[device].resource 1..
 * entry[device].resource only Device
 * entry[deviceusestatement].resource 1..
@@ -32,13 +32,13 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 /* * entry[media].resource 1..
 * entry[media].resource only $Media-observation-uv-ips */
 * entry[medication].resource 1..
-* entry[medication].resource only MedicationXpandh
+* entry[medication].resource only MedicationPsXpandh
 
 /* * entry[medicationrequest].resource 1..
 * entry[medicationrequest].resource only $MedicationRequest-uv-ips */
 
 * entry[medicationstatement].resource 1..
-* entry[medicationstatement].resource only MedicationStatementXpandh
+* entry[medicationstatement].resource only MedicationStatementPsXpandh
 
 
 * entry[practitioner].resource 1..

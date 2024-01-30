@@ -1,23 +1,23 @@
-Profile: MedicationStatementXpandh
+Profile: MedicationStatementPsXpandh
 Parent: $MedicationStatement-uv-ips
-Id: MedicationStatement-xpandh
-Title:    "Medication Statement"
+Id: MedicationStatement-ps-eu-xpandh
+Title:    "Medication Statement (EU PS)"
 Description: """This profile constrains the MedicationStatement resource for the purpose of the European patient summary."""
 * ^experimental = false
 * ^purpose = "This profile constrains the MedicationStatement resource for the purpose of the European patient summary."
 * medicationReference 1..
-* medicationReference only Reference ( MedicationXpandh )
-* subject only Reference (PatientXpandh)
+* medicationReference only Reference ( MedicationPsXpandh )
+* subject only Reference (PatientPsXpandh)
 * reasonCode from EHDSICondition (extensible)
-* reasonReference only Reference(ConditionXpandh or Observation or DiagnosticReport) // Only for HDR ?
+* reasonReference only Reference(ConditionPsXpandh or Observation or DiagnosticReport) // Only for HDR ?
 
 //------
 * dosage ^short =  	"How medication is/was taken or should be taken"
 // to be further developped
 
-Profile: MedicationXpandh
+Profile: MedicationPsXpandh
 Parent: $Medication-uv-ips
-Id: Medication-xpandh
+Id: Medication-ps-eu-xpandh
 Title:    "Medication (EU PS)"
 Description: """This profile constrains the Medication resource for the purpose of the European patient summary."""
 * ^experimental = false
@@ -27,7 +27,7 @@ Description: """This profile constrains the Medication resource for the purpose 
 // ADD ADDITIONAL VALUE SET
 * ingredient
   * itemCodeableConcept from EHDSISubstance (preferred)
-  * itemReference only Reference (MedicationXpandh)
+  * itemReference only Reference (MedicationPsXpandh)
   * isActive ^short = "Usually true"
   * strength ^short = "A kind of strength"
   * strength ^definition = """A kind of strength.

@@ -68,7 +68,7 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 * section[sectionMedications]
   * ^short = "eHDSI Medication Summary"
   * ^definition = """The medication summary section contains a description of the patient's medications as part of the patient summary"""
-  * entry[medicationStatement] only Reference (MedicationStatementXpandh)
+  * entry[medicationStatement] only Reference (MedicationStatementPsXpandh)
 * section[sectionAllergies]
   * ^short = "eHDSI Allergies and Other Adverse Reactions"
   * ^definition = """The adverse and other adverse reactions section contains a narrative description of the substance intolerances and the associated adverse reactions suffered by the patient. It includes entries for intolerances and adverse reactions as described in the entry.
@@ -93,7 +93,7 @@ The field \"alerts\" was originally defined to include all the important and obj
     An assessment of the likely outcomes for a patient or other subject as well as the likelihood of each outcome. ,
     RiskAssessment)
 
-* section[sectionProblems].entry[problem] only Reference (ConditionXpandh)
+* section[sectionProblems].entry[problem] only Reference (ConditionPsXpandh)
   * ^short = "eHDSI Active Problems"
   * ^definition = """The active problem section contains a narrative description of the conditions currently being monitored for the patient. It includes entries for patient conditions as described in the Entry.
 This section can also be used to hold the Medical Alert information (other alerts not included in allergies). Alerts, of all types are to be considered for the next iteration of the specifications."""
@@ -118,7 +118,7 @@ For the eHDSI Patient Summary this is a mandatory section and shall be used to r
 * section[sectionVitalSigns].entry[vitalSign] only Reference ($Observation-bp)
   * ^short = "eHDSI Vital Signs"
   * ^definition = """The vital signs section contains coded measurement results of a patient\’s vital signs."""
-* section[sectionPastIllnessHx].entry[pastProblem] only Reference (ConditionXpandh)
+* section[sectionPastIllnessHx].entry[pastProblem] only Reference (ConditionPsXpandh)
   * ^short = "eHDSI History Of Past Illness"
   * ^definition = """The History of Past Illness section contains a narrative description of the conditions the patient suffered in the past. It includes entries for problems as described in the Entry."""
 * section[sectionFunctionalStatus]

@@ -1,4 +1,4 @@
-Profile: ConditionXpandh
+Profile: ConditionPsXpandh
 Parent: $Condition-uv-ips
 Id: Condition-xpandh
 Title:    "Condition (EU PS)"

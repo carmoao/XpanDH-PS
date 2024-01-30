@@ -15,15 +15,15 @@ Description: """This profile constrains the Immunization resource for the purpos
 
 * extension contains ImmunizationAdministeredProduct named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
-* extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationXpandh )
+* extension[administeredProduct].extension[reference].valueReference only Reference ( MedicationPsXpandh )
 
 
 /* FIX THE ISSUE WITH CODEABLE REFERENCE
 * extension contains $immunization-administeredProduct-r5 named administeredProduct 0..1
 * extension[administeredProduct].extension[concept]
 * extension[administeredProduct].extension[reference]  */
-// .valueReference only Reference ( MedicationXpandh )
-// * extension[administeredProduct].valueReference only Reference ( MedicationXpandh )
+// .valueReference only Reference ( MedicationPsXpandh )
+// * extension[administeredProduct].valueReference only Reference ( MedicationPsXpandh )
 
 /* * vaccineCode.coding ^slicing.discriminator[0].type = #pattern
 * vaccineCode.coding ^slicing.discriminator[0].path = "$this"

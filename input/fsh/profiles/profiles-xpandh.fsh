@@ -32,11 +32,11 @@ Description: "This profile constrains the CareTeam resource for the purpose of t
 * participant.member 1.. MS
 * participant.member only Reference (Practitioner or PractitionerRole or RelatedPerson or OrganizationCareProviderXpandh or CareTeamXpandh)
 * reasonCode ^short = "Problem this team is in charge of"
-* reasonReference only Reference(ConditionXpandh)
+* reasonReference only Reference(ConditionPsXpandh)
 
 /* 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  MedicationStatementXpandh
+Profile:  MedicationStatementPsXpandh
 Parent:   $MedicationStatement-uv-ips
 Id:       MedicationStatement-eu-xpandh
 Title:    "MedicationStatement"
@@ -44,11 +44,11 @@ Description: "This profile constrains the MedicationStatement IPS FHIR profile f
 //-------------------------------------------------------------------------------------------
 
 * reasonCode ^short = "Reason (e.g. the Rare Disease) for why the medication is being/was taken"
-* reasonReference only Reference(ConditionXpandh or Observation or DiagnosticReport)
+* reasonReference only Reference(ConditionPsXpandh or Observation or DiagnosticReport)
 * subject only Reference(PatientXpandh) */
 
 /* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  ConditionXpandh
+Profile:  ConditionPsXpandh
 Parent:   $Condition-uv-ips
 Id:       Condition-eu-xpandh
 Title:    "Condition"

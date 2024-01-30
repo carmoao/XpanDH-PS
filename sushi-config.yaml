@@ -213,6 +213,10 @@ resources:
   StructureDefinition/Vaccination:
     name: A.2.2.1 - Vaccination/prophylaxis information
     description: Vaccination/prophylaxis information. Sections A.2.2.1 of the eHN guideline.
+
+  StructureDefinition/Medicine:
+    name: A.2.4.1 Current and relevant past medicines
+    description: Relevant prescribed medicines whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not, or medicines that influence current health status or are relevant to a clinical decision. Section A2.4.1 of the eHN guideline.
   
 #  Patient/bad-example: omit
 
@@ -236,6 +240,7 @@ groups:
       - StructureDefinition/Subject
       - StructureDefinition/Allergy
       - StructureDefinition/Vaccination
+      - StructureDefinition/Medicine
 #      - StructureDefinition/LegalAuthenticator
 #      - StructureDefinition/Payer
 
