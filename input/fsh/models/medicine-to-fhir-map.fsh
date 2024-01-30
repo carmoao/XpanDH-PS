@@ -63,7 +63,7 @@ Usage: #definition
 * group[=].element[=].display = "A.2.4.1.7 Dosage Regimen"					
 * group[=].element[=].target.code = #MedicationStatement.dosage					
 * group[=].element[=].target.display = ""					
-* group[=].element[=].target.equivalence = #relatedTo					
+* group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #Medicine.route					
 * group[=].element[=].display = "A.2.4.1.8 Route of administration"					
@@ -96,13 +96,13 @@ Usage: #definition
 * group[=].element[=].display = "A.2.4.1.2 Intended use"					
 * group[=].element[=].target.code = #Medication.					
 * group[=].element[=].target.display = ""					
-* group[=].element[=].target.equivalence = #relatedTo					
+* group[=].element[=].target.equivalence = #relatedto					
 * group[=].element[=].target.comment = "TBD"					
 * group[=].element[+].code = #Medicine.productName					
 * group[=].element[=].display = "A.2.4.1.3 Brand name"					
 * group[=].element[=].target.code = #Medication.code.text					
 * group[=].element[=].target.display = ""					
-* group[=].element[=].target.equivalence = #relatedTo					
+* group[=].element[=].target.equivalence = #relatedto					
 * group[=].element[=].target.comment = "TBD"					
 * group[=].element[+].code = #Medicine.activeIngredient					
 * group[=].element[=].display = "A.2.4.1.4 Active ingredient lists"					
@@ -132,7 +132,7 @@ Usage: #definition
 * group[=].element[=].display = "A.2.4.1.8 Route of administration"					
 * group[=].element[=].target.code = #Medication.					
 * group[=].element[=].target.display = ""					
-* group[=].element[=].target.equivalence = #relatedTo					
+* group[=].element[=].target.equivalence = #relatedto					
 * group[=].element[=].target.comment = "TBD"					
 * group[=].element[+].code = #Medicine.onsetDate					
 * group[=].element[=].display = "A.2.4.1.9 Date of onset of treatment"					
