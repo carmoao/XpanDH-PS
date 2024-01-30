@@ -83,62 +83,62 @@ Usage: #definition
 //---END					
 					
 					
+* group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medication-ps-eu-xpandh"					
 					
+* group[=].element[+].code = #Medicine.reason					
+* group[=].element[=].display = "A.2.4.1.1 Medication reason"					
+//-- unmatched					
+//-- unmatched					
+* group[=].element[=].target.equivalence = #unmatched					
 					
+* group[=].element[+].code = #Medicine.intendedUse					
+* group[=].element[=].display = "A.2.4.1.2 Intended use"					
+* group[=].element[=].target.code = #Medication.					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedTo					
+* group[=].element[=].target.comment = "TBD"					
+* group[=].element[+].code = #Medicine.productName					
+* group[=].element[=].display = "A.2.4.1.3 Brand name"					
+* group[=].element[=].target.code = #Medication.code.text					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedTo					
+* group[=].element[=].target.comment = "TBD"					
+* group[=].element[+].code = #Medicine.activeIngredient					
+* group[=].element[=].display = "A.2.4.1.4 Active ingredient lists"					
+* group[=].element[=].target.code = #Medication.ingredient.itemCodeableConcept					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #equivalent					
+* group[=].element[=].target.comment = "where ingredient.isActive = true"					
+* group[=].element[+].code = #Medicine.strength					
+* group[=].element[=].display = "A.2.4.1.5 Strength"					
+* group[=].element[=].target.code = #Medication.ingredient.strength					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #equivalent					
+* group[=].element[=].target.comment = "where ingredient.isActive = true"					
+* group[=].element[+].code = #Medicine.doseForm					
+* group[=].element[=].display = "A.2.4.1.6 Pharmaceutical dose form"					
+* group[=].element[=].target.code = #Medication.form					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #equivalent					
 					
+* group[=].element[+].code = #Medicine.dosageRegimen					
+* group[=].element[=].display = "A.2.4.1.7 Dosage Regimen"					
+//-- unmatched					
+//-- unmatched					
+* group[=].element[=].target.equivalence = #unmatched					
 					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+* group[=].element[+].code = #Medicine.route					
+* group[=].element[=].display = "A.2.4.1.8 Route of administration"					
+* group[=].element[=].target.code = #Medication.					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedTo					
+* group[=].element[=].target.comment = "TBD"					
+* group[=].element[+].code = #Medicine.onsetDate					
+* group[=].element[=].display = "A.2.4.1.9 Date of onset of treatment"					
+//-- unmatched					
+//-- unmatched					
+* group[=].element[=].target.equivalence = #unmatched					
 					
 					
 					
