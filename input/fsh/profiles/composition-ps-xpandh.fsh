@@ -114,6 +114,7 @@ For the eHDSI Patient Summary this is a mandatory section and shall be used to r
 * section[sectionResults]
   * ^short = "eHDSI Coded Results"
   * ^definition = """In eHDSI this section is used only for the purpose of providing the results for the blood group."""
+  // consider to add specialized profiles for results 
   * entry[results-observation] only Reference (ObservationBloodGroupXpandh or ObservationResultsXpandh)
 * section[sectionVitalSigns].entry[vitalSign] only Reference ($Observation-bp)
   * ^short = "eHDSI Vital Signs"

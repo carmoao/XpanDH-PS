@@ -1,7 +1,7 @@
 // -------------------------------------------------------------------------------					
 //  Concept Model. File: 					closedproblem-to-fhir-map.fsh
 // -------------------------------------------------------------------------------					
-Instance: ClosedProblem2FHIR-eu-ps					
+Instance: closedproblem2FHIR-eu-ps					
 InstanceOf: ConceptMap					
 Usage: #definition					
 // * url = "http://terminology.hl7.it/ConceptMap/ConceptMap-subject2osiris"					
