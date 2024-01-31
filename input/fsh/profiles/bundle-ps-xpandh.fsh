@@ -11,7 +11,7 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 * entry[composition].resource 1..
 * entry[composition].resource only CompositionPsXpandh
 * entry[patient].resource 1..
-* entry[patient].resource only PatientXpandh
+* entry[patient].resource only PatientPsXpandh
 * entry[allergyintolerance].resource 1..
 * entry[allergyintolerance].resource only AllergyIntoleranceXpandh
 * entry[condition].resource 1..

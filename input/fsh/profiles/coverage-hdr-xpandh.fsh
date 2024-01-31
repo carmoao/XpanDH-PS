@@ -20,4 +20,4 @@ Description: "Coverage used to represent the payer for this Encounter for the sc
 * payor contains organization 0..*
 * payor[organization] only Reference ( Organization )
 
-* beneficiary only Reference ( PatientXpandh )
+* beneficiary only Reference ( PatientPsXpandh )

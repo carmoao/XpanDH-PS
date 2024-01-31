@@ -11,7 +11,7 @@ Description: """This profile constrains the AllergyIntolerance resource for the 
 * code from EHDSIAllergyCode (extensible)
 * verificationStatus ^short = "Certainty"
 * criticality ^short = "Criticality"
-* patient only Reference(PatientXpandh)
+* patient only Reference(PatientPsXpandh)
 // * onset[x] only dateTime // is this needed ?
 * onsetDateTime ^short = "Onset date"
 * reaction.substance from EHDSIAllergens  (extensible)

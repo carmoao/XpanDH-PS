@@ -6,6 +6,6 @@ Description: """This profile constrains the Procedure resource for the purpose o
 * ^experimental = false
 * ^purpose = "This profile constrains the Procedure resource for the purpose of the European patient summary."
 * code from EHDSIProblemCode (extensible)
-* subject only Reference(PatientXpandh)
+* subject only Reference(PatientPsXpandh)
 * performed[x] only dateTime or Period // is this needed ?
 

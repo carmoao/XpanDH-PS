@@ -35,7 +35,7 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 * type ^short = "Kind of composition (\"Patient Summary\")"
 * type ^definition = "Specifies that this composition refer to a Patient Summary"
 // * type = http://loinc.org#34105-7  
-* subject only Reference(PatientXpandh)
+* subject only Reference(PatientPsXpandh)
 * subject 1..1
 * subject ^definition = "Who or what the composition is about. \r\nIn general a composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).\r\nFor the hdr the subject is always the patient."
 * encounter only Reference ( EncounterXpandh )

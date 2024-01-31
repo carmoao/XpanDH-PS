@@ -6,7 +6,7 @@ Description: """This profile constrains the DeviceUseStatement resource for the 
 * ^experimental = false
 * ^purpose = "This profile constrains the DeviceUseStatement resource for the purpose of the European patient summary."
 * device only Reference(DeviceXpandh)
-* subject only Reference(PatientXpandh)
+* subject only Reference(PatientPsXpandh)
 
 
 Profile: DeviceXpandh

@@ -12,7 +12,7 @@ Description: "This profile constrains the Observation resource to represent vari
 * code only $CodeableConcept-uv-ips
 * code from EHDSISocialHistory
 * subject 1.. MS
-* subject only Reference(PatientXpandh)
+* subject only Reference(PatientPsXpandh)
   * reference 1.. 
 * value[x] ^short = "Actual result."
 

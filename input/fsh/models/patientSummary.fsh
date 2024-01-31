@@ -33,11 +33,13 @@ Example 6: transplanted organs illustrate other information that has to be taken
 Example 7: participation in a clinical trial that has to be taken into account in a healthcare contact."""				
 * body.medicalHistory 1..1 BackboneElement "A.2.2 Medical history" """A.2.2 - Medical history"""				
 * body.medicalHistory.vaccination 0..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Vaccination "A.2.2.1 Vaccination/ prophylaxis information" """A.2.2.1 - Vaccination/ prophylaxis information"""				
-* body.medicalHistory.inactiveProblem 0..* BackboneElement "A.2.2.2 Resolved, closed or inactive problems" """A.2.2.2 - Resolved, closed or inactive problems"""				
+* body.medicalHistory.inactiveProblem 0..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/ClosedProblem "A.2.2.2 Resolved, closed or inactive problems" """A.2.2.2 - Resolved, closed or inactive problems"""				
 * body.medicalHistory.anamnesis 0..1 BackboneElement "A.2.2.3 Medical history" """A.2.2.3 - Medical history"""				
-* body.medicalHistory.medicalDevices 1..1 BackboneElement "A.2.3.2 Medical devices and implants" """A.2.3.2 - Medical devices and implants"""				
-* body.medicalHistory.procedures 1..1 BackboneElement "A.2.3.3 Procedures" """A.2.3.3 - Procedures"""				
-* body.medicalHistory.functionalStatus 0..1 BackboneElement "A.2.3.4 Functional status" """A.2.3.4 - Functional status"""				
+* body.medicalProblems 0..1 BackboneElement "A.2.3 Medical problems" """A.2.3 Medical problems"""				
+* body.medicalProblems.problems 0..1 http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Problem "A.2.3.1 Current problems" """A.2.3.1 Current problems"""				
+* body.medicalProblems.medicalDevices 1..1 BackboneElement "A.2.3.2 Medical devices and implants" """A.2.3.2 - Medical devices and implants"""				
+* body.medicalProblems.procedures 1..1 BackboneElement "A.2.3.3 Procedures" """A.2.3.3 - Procedures"""				
+* body.medicalProblems.functionalStatus 0..1 BackboneElement "A.2.3.4 Functional status" """A.2.3.4 - Functional status"""				
 * body.medicationSummary 1..1 BackboneElement "A.2.4 Medication summary" """A.2.4 - Medication summary"""				
 * body.medicationSummary.medication 1..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine "A.2.4.1 Current and relevant past medicines" """Relevant prescribed medicines whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not, or medicines that influence current health status or are relevant to a clinical decision"""				
 * body.socialHistory 0..1 BackboneElement "A.2.5 Social history" """A.2.5 - Social history"""				
@@ -45,15 +47,14 @@ Example 7: participation in a clinical trial that has to be taken into account i
 * body.patientData 0..1 BackboneElement "A.2.7 Patient provided data" """A.2.7 - Patient provided data"""				
 * body.patientData.travelHistory 0..1 BackboneElement "A.2.7.1 Travel history" """A.2.7.1 - Travel history"""				
 * body.patientData.advanceDirective 0..1 BackboneElement "A.2.7.2 Advance Directive" """A.2.7.2 - Advance Directive"""				
-* body.results 0..1 BackboneElement "A.2.8 Results" """A.2.8 - Results"""				
-* body.planOfCare 0..1 BackboneElement "A.2.9 Plan of Care" """A.2.9 - Plan of Care"""				
+* body.patientData.advanceDirective.documentation 0..* BackboneElement "A.2.7.2.1 Documentation" """Existence of documentation on living will.
+Preferred system: SNOMED CT GPS"""				
+* body.results 0..1 http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Result "A.2.8 Results" """A.2.8 - Results"""				
+* body.planOfCare 0..1 BackboneElement "A.2.9 Plan of Care" """(Therapeutic recommendations that do not include pharmacologic treatments, such as diet, physical exercise, planned surgeries)"""				
+* body.planOfCare.carePlan 0..* string "A.2.9.1 Plan of care" """Narrative containing the plan including proposals, goals, and vaccination requests for monitoring, tracking, or improving the condition of the patient. In the future it is expected that this Section could be provided in a structured and coded format."""				
 //--- END				
 //--- END				
 //--- END				
-//--- END				
-//--- END				
-				
-				
 				
 				
 				

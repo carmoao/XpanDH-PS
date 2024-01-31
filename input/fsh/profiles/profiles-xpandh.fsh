@@ -25,7 +25,7 @@ Title:    "CareTeam"
 Description: "This profile constrains the CareTeam resource for the purpose of the XpanDH project."
 //-------------------------------------------------------------------------------------------
 
-* subject only Reference(PatientXpandh)
+* subject only Reference(PatientPsXpandh)
 * subject MS
 * participant 1.. MS
 * participant.role MS
@@ -45,7 +45,7 @@ Description: "This profile constrains the MedicationStatement IPS FHIR profile f
 
 * reasonCode ^short = "Reason (e.g. the Rare Disease) for why the medication is being/was taken"
 * reasonReference only Reference(ConditionPsXpandh or Observation or DiagnosticReport)
-* subject only Reference(PatientXpandh) */
+* subject only Reference(PatientPsXpandh) */
 
 /* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ConditionPsXpandh

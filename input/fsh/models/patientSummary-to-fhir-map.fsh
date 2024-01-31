@@ -151,23 +151,35 @@ Usage: #definition
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.anamnesis					
 * group[=].element[=].display = "A.2.2.3 Medical history"					
-* group[=].element[=].target.code = #Composition					
+* group[=].element[=].target.code = #Composition.section					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
-* group[=].element[+].code = #PatientSummary.body.medicalHistory.medicalDevices					
+* group[=].element[+].code = #PatientSummary.body.medicalProblems					
+* group[=].element[=].display = "A.2.3 Medical problems"					
+* group[=].element[=].target.code = #Composition.section					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+					
+* group[=].element[+].code = #PatientSummary.body.medicalProblems.problems					
+* group[=].element[=].display = "A.2.3.1 Current problems"					
+* group[=].element[=].target.code = #Composition.section:section:sectionProblems					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #equivalent					
+					
+* group[=].element[+].code = #PatientSummary.body.medicalProblems.medicalDevices					
 * group[=].element[=].display = "A.2.3.2 Medical devices and implants"					
 * group[=].element[=].target.code = #Composition.ÿsection:sectionMedicalDevices					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-* group[=].element[+].code = #PatientSummary.body.medicalHistory.procedures					
+* group[=].element[+].code = #PatientSummary.body.medicalProblems.procedures					
 * group[=].element[=].display = "A.2.3.3 Procedures"					
 * group[=].element[=].target.code = #Composition.section:sectionProceduresHx					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-* group[=].element[+].code = #PatientSummary.body.medicalHistory.functionalStatus					
+* group[=].element[+].code = #PatientSummary.body.medicalProblems.functionalStatus					
 * group[=].element[=].display = "A.2.3.4 Functional status"					
 * group[=].element[=].target.code = #Composition.section:sectionFunctionalStatus					
 * group[=].element[=].target.display = ""					
@@ -215,6 +227,12 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
+* group[=].element[+].code = #PatientSummary.body.patientData.advanceDirective.documentation					
+* group[=].element[=].display = "A.2.7.2.1 Documentation"					
+* group[=].element[=].target.code = #Composition.section:sectionAdvanceDirectives					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "to be reviewed"					
 * group[=].element[+].code = #PatientSummary.body.results					
 * group[=].element[=].display = "A.2.8 Results"					
 * group[=].element[=].target.code = #Composition.section:sectionResults					
@@ -227,6 +245,12 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
+* group[=].element[+].code = #PatientSummary.body.planOfCare.carePlan					
+* group[=].element[=].display = "A.2.9.1 Plan of care"					
+* group[=].element[=].target.code = #Composition.section:sectionPlanOfCare.text					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #equivalent					
+					
 //---END					
 //---END					
 //---END					
@@ -234,35 +258,11 @@ Usage: #definition
 //---END					
 //---END					
 //---END					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
 					
 					
 					
