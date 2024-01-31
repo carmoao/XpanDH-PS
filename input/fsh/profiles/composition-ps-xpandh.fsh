@@ -145,6 +145,11 @@ Entries for references to consent and advance directive documents when known wil
   * ^short = "eHDSI Advance Directives Section"
   * ^definition = """The advance directive section contains a narrative description of patient's advance directive. The optional author and informant elements are used when necessary to convey the provenance and authoring of the section content in case it is different from what is announced in the CDA header.
 Entries for references to consent and advance directive documents when known will be specified by future versions of this template."""
+
 * section contains sectionTravelHx ..1
+* section[sectionTravelHx]
   * insert SectionComRules ( Travel History Section, This Section describes the travel history relevant for the Patient Summary\, e.g.recent travel in a region of high prevalence of a specific infectious disease like Malaria,  http://loinc.org#10182-4 )
 
+* section contains sectionPatientHx ..1
+* section[sectionPatientHx]
+  * insert SectionComRules ( Patient History Section, This Section describes all aspects of the medical history of the patient even if not pertinent to the current procedure\, and may include chief complaint\, past medical history\, social history\, family history\, surgical or procedure history\, medication history\, and other history information. The history may be limited to information pertinent to the current procedure or may be more comprehensive. The history may be reported as a collection of random clinical statements or it may be reported categorically. Categorical report formats may be divided into multiple subsections including Past Medical History\, Social History., http://loinc.org#11329-0 )

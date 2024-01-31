@@ -155,6 +155,12 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
+* group[=].element[+].code = #PatientSummary.body.medicalHistory.anamnesis.details					
+* group[=].element[=].display = "A.2.2.3.1 Medical history"					
+* group[=].element[=].target.code = #Composition.section:section:sectionPatientHx					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+					
 * group[=].element[+].code = #PatientSummary.body.medicalProblems					
 * group[=].element[=].display = "A.2.3 Medical problems"					
 * group[=].element[=].target.code = #Composition.section					
@@ -251,12 +257,6 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-//---END					
-//---END					
-//---END					
-//---END					
-//---END					
-//---END					
 //---END					
 //---END					
 //---END					

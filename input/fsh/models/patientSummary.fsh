@@ -35,6 +35,7 @@ Example 7: participation in a clinical trial that has to be taken into account i
 * body.medicalHistory.vaccination 0..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Vaccination "A.2.2.1 Vaccination/ prophylaxis information" """A.2.2.1 - Vaccination/ prophylaxis information"""				
 * body.medicalHistory.inactiveProblem 0..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/ClosedProblem "A.2.2.2 Resolved, closed or inactive problems" """A.2.2.2 - Resolved, closed or inactive problems"""				
 * body.medicalHistory.anamnesis 0..1 BackboneElement "A.2.2.3 Medical history" """A.2.2.3 - Medical history"""				
+* body.medicalHistory.anamnesis.details 0..1 Narrative "A.2.2.3.1 Medical history" """This section may provide both synthetic anamnesis (e.g. description of phases of the pathology as a chronological summary of clustered clinical information) and anecdotal evidence that clinicians can collect from the patient, and can read in a narrative form. See Section 2, Chapter III, Art 7, (c)."""				
 * body.medicalProblems 0..1 BackboneElement "A.2.3 Medical problems" """A.2.3 Medical problems"""				
 * body.medicalProblems.problems 0..1 http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Problem "A.2.3.1 Current problems" """A.2.3.1 Current problems"""				
 * body.medicalProblems.medicalDevices 1..1 BackboneElement "A.2.3.2 Medical devices and implants" """A.2.3.2 - Medical devices and implants"""				
@@ -55,8 +56,7 @@ Preferred system: SNOMED CT GPS"""
 //--- END				
 //--- END				
 //--- END				
-				
-				
+//--- END				
 				
 //--------------------------------------------------------------------------------				
 //  Logical Model - Comments				
