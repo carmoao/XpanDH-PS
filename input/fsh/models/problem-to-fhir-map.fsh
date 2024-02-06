@@ -12,9 +12,9 @@ Usage: #definition
 * description = "eHN Problem Model to this guide Map"					
 * purpose = "It shows how the Problem data set defined by the EU eHN guidelines is mapped into this guide"					
 * sourceUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Problem"					
-* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-eu-xpandh"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-xpandh"					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Problem"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-eu-xpandh"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-xpandh"					
 					
 * group[=].element[+].code = #Problem.description					
 * group[=].element[=].display = "A.2.3.1.1 Problem / diagnosis description"					

@@ -12,10 +12,10 @@ Usage: #definition
 * description = "eHN Allergy Model to this guide Map"					
 * purpose = "It shows how the Patient Summary Allergy data set defined by the EU eHN guidelines is mapped into this guide"					
 * sourceUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Allergy"					
-* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/AllergyIntolerance-ps-eu-xpandh"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/AllergyIntolerance-ps-xpandh"					
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Allergy"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/AllergyIntolerance-ps-eu-xpandh"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/AllergyIntolerance-ps-xpandh"					
 					
 * group[=].element[+].code = #Allergy.description					
 * group[=].element[=].display = "A.2.1.1.1 Allergy description"					

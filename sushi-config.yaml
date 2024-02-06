@@ -219,8 +219,8 @@ resources:
     description: A - Patient Summary. eHN guideline model.
   
   StructureDefinition/Subject:
-    name: A - Patient Summary
-    description: Patient or Subject of care. Sections A1.1 and A1.2 of the eHN guideline.
+    name: A.1.1, A.1.2 - Patient or Subject of care
+    description: Patient or Subject of care. Sections A.1.1 and A.1.2 of the eHN guideline.
  
   StructureDefinition/Allergy:
     name: A.2.1.1 - Allergy

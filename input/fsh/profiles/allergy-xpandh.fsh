@@ -1,6 +1,6 @@
 Profile: AllergyIntoleranceXpandh
 Parent: $AllergyIntolerance-uv-ips
-Id: AllergyIntolerance-ps-eu-xpandh
+Id: AllergyIntolerance-ps-xpandh
 Title:    "Allergy Intolerance (EU PS)"
 Description: """This profile constrains the AllergyIntolerance resource for the purpose of the European patient summary."""
 * ^experimental = false

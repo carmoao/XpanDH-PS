@@ -1,6 +1,6 @@
 Profile: CompositionPsXpandh
 Parent: $Composition-uv-ips
-Id: Composition-ps-eu-xpandh
+Id: Composition-ps-xpandh
 Title: "Composition (EU PS)"
 Description: "Clinical document used to represent a Patient Summary for the scope of this project."
 /* * ^publisher = "XpanDH Project"
@@ -38,7 +38,7 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 * subject only Reference(PatientPsXpandh)
 * subject 1..1
 * subject ^definition = "Who or what the composition is about. \r\nIn general a composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).\r\nFor the hdr the subject is always the patient."
-* encounter only Reference ( EncounterXpandh )
+// * encounter only Reference ( EncounterXpandh )
 * date ^short = "HDR date"
 * author ^short = "Who and/or what authored the Patient Summary"
 * author ^definition = "Identifies who is responsible for the information in the Patient Summary, not necessarily who typed it in."
@@ -101,7 +101,7 @@ This section can also be used to hold the Medical Alert information (other alert
   * ^short = "eHDSI List of Surgeries"
   * ^definition = """The list of surgeries section includes entries for procedures and references to procedure reports when known as described in the Entry. In epSOS this section was used to describe the Surgical Procedures prior past six months (optional) and to record the Major Surgical Procedures past 6 months (required). This choice of considering a time based distinction was due by the subjectivity of \‘relevancy\’ for automatically assembled PS. 
 As the date can be seen from the procedure, the two have the same expression. It is up to the implementers of the system to display it in a different way."""
-  * entry[procedure] only Reference (ProcedureXpandh)
+  * entry[procedure] only Reference (ProcedurePsXpandh)
 * section[sectionImmunizations]
   * ^short = "eHDSI Immunizations"
   * ^definition = """The immunizations section contains a narrative description of the immunizations administered to the patient in the past. It includes entries for medication administration as described in related profiles."""

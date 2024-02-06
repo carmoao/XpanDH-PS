@@ -12,10 +12,10 @@ Usage: #definition
 * description = "eHN Vaccination infos to this guide Map"					
 * purpose = "It shows how the Vaccination data set defined by the EU eHN guidelines is mapped into this guide"					
 * sourceUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Vaccination"					
-* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Immunization-ps-eu-xpandh"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Immunization-ps-xpandh"					
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Vaccination"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Immunization-ps-eu-xpandh"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Immunization-ps-xpandh"					
 					
 * group[=].element[+].code = #Vaccination.targetDisease					
 * group[=].element[=].display = "A.2.2.1.1 Disease or agent targeted"					

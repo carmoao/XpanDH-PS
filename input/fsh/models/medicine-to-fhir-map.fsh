@@ -12,10 +12,10 @@ Usage: #definition
 * description = "eHN Medicine Model to this guide Map"					
 * purpose = "It shows how the Medicine  data set defined by the EU eHN guidelines is mapped into this guide"					
 * sourceUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine"					
-* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/MedicationStatement-ps-eu-xpandh"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/MedicationStatement-ps-xpandh"					
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/MedicationStatement-ps-eu-xpandh"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/MedicationStatement-ps-xpandh"					
 					
 * group[=].element[+].code = #Medicine.reason					
 * group[=].element[=].display = "A.2.4.1.1 Medication reason"					
@@ -84,7 +84,7 @@ Usage: #definition
 					
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medication-ps-eu-xpandh"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medication-ps-xpandh"					
 					
 * group[=].element[+].code = #Medicine.reason					
 * group[=].element[=].display = "A.2.4.1.1 Medication reason"					

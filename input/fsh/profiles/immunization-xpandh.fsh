@@ -1,7 +1,7 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ImmunizationPsXpandh
 Parent:   $Immunization-uv-ips
-Id:       Immunization-ps-eu-xpandh
+Id:       Immunization-ps-xpandh
 Title:    "Immunization (EU PS)"
 Description: """This profile constrains the Immunization resource for the purpose of the European patient summary."""
 
@@ -81,7 +81,7 @@ Description: """This profile constrains the Immunization resource for the purpos
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ImmunizationRecommendationPsXpandh
 Parent:   ImmunizationRecommendation
-Id:       ImmunizationRecommendation-ps-eu-xpandh
+Id:       ImmunizationRecommendation-ps-xpandh
 Title:    "ImmunizationRecommendation (EU PS)"
 Description: """This profile defines how to represent Immunization Recommandations for the purpose of the European patient summary."""
 //-------------------------------------------------------------------------------------------
@@ -107,7 +107,7 @@ Description: """This profile defines how to represent Immunization Recommandatio
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  LocationPsXpandh
 Parent:   Location
-Id:       Location-ps-eu-xpandh
+Id:       Location-ps-xpandh
 Title:    "Location (EU PS)"
 Description: """This profile defines how to represent Location in FHIR for the purpose of the European patient summary."""
 

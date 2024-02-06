@@ -45,8 +45,12 @@ Description: "Clinical document used to represent a Patient Summary for the scop
 * entry[practitioner].resource only PractitionerXpandh
 * entry[practitionerrole].resource 1..
 * entry[practitionerrole].resource only PractitionerRoleXpandh
+
+/*  COMMENTED TO BY-PASS A BUILD ERROR TO BE ANALYZED
 * entry[procedure].resource 1..
-* entry[procedure].resource only ProcedureXpandh
+* entry[procedure].resource only ProcedurePsXpandh
+ */
+
 
 /*
 * entry[organization].resource 1..

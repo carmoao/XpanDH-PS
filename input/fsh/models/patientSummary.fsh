@@ -44,9 +44,13 @@ Example 7: participation in a clinical trial that has to be taken into account i
 * body.medicationSummary 1..1 BackboneElement "A.2.4 Medication summary" """A.2.4 - Medication summary"""				
 * body.medicationSummary.medication 1..* http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine "A.2.4.1 Current and relevant past medicines" """Relevant prescribed medicines whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not, or medicines that influence current health status or are relevant to a clinical decision"""				
 * body.socialHistory 0..1 BackboneElement "A.2.5 Social history" """A.2.5 - Social history"""				
+* body.socialHistory.observation 0..* BackboneElement "A.2.5.1 Social history observations related to health" """Health related lifestyle factors or lifestyle observations and social determinants of health. Example: cigarette smoker, alcohol consumption. - Preferred System: SNOMED CT GPS"""				
+* body.socialHistory.referenceRange 0..* Range "A.2.5.2 Reference date range" """Example: from 1974 to 2004"""				
 * body.pregnancyHistory 0..1 BackboneElement "A.2.6 Pregnancy history" """A.2.6 Pregnancy history"""				
 * body.patientData 0..1 BackboneElement "A.2.7 Patient provided data" """A.2.7 - Patient provided data"""				
 * body.patientData.travelHistory 0..1 BackboneElement "A.2.7.1 Travel history" """A.2.7.1 - Travel history"""				
+* body.patientData.travelHistory.country 0..* CodeableConcept "A.2.7.1.1 Country" """A.1.4.1 Country(s) visited - Preferred System: ISO 3166"""				
+* body.patientData.travelHistory.period 0..* dateTime "A.2.7.1.2 Period" """A.1.4.2 Date of entry and departure - Preferred System: ISO 8601"""				
 * body.patientData.advanceDirective 0..1 BackboneElement "A.2.7.2 Advance Directive" """A.2.7.2 - Advance Directive"""				
 * body.patientData.advanceDirective.documentation 0..* BackboneElement "A.2.7.2.1 Documentation" """Existence of documentation on living will.
 Preferred system: SNOMED CT GPS"""				
@@ -57,33 +61,5 @@ Preferred system: SNOMED CT GPS"""
 //--- END				
 //--- END				
 //--- END				
-				
-//--------------------------------------------------------------------------------				
-//  Logical Model - Comments				
-//--------------------------------------------------------------------------------				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+//--- END				
+//--- END				

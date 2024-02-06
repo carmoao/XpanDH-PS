@@ -1,6 +1,6 @@
-Profile: ProcedureXpandh
+Profile: ProcedurePsXpandh
 Parent: $Procedure-uv-ips
-Id: Procedure-xpandh
+Id: Procedure-ps-xpandh
 Title:    "Procedure (EU PS)"
 Description: """This profile constrains the Procedure resource for the purpose of the European patient summary."""
 * ^experimental = false

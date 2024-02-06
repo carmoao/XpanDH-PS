@@ -12,9 +12,9 @@ Usage: #definition
 * description = "eHN ClosedProblem Model to this guide Map"					
 * purpose = "It shows how the ClosedProblem data set defined by the EU eHN guidelines is mapped into this guide"					
 * sourceUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/ClosedProblemLab"					
-* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-eu-xpandh"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-xpandh"					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/ClosedProblemLab"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-eu-xpandh"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-xpandh"					
 					
 * group[=].element[+].code = #ClosedProblemLab.description					
 * group[=].element[=].display = "A.2.2.2.1 Problem description"					

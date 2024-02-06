@@ -209,6 +209,18 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
+* group[=].element[+].code = #PatientSummary.body.socialHistory.observation					
+* group[=].element[=].display = "A.2.5.1 Social history observations related to health"					
+* group[=].element[=].target.code = #Composition.section:sectionSocialHistory.entry					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #equivalent					
+//---END					
+* group[=].element[+].code = #PatientSummary.body.socialHistory.referenceRange					
+* group[=].element[=].display = "A.2.5.2 Reference date range"					
+* group[=].element[=].target.code = #Composition.section:sectionSocialHistory.entry.effective[x]					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #equivalent					
+//---END					
 * group[=].element[+].code = #PatientSummary.body.pregnancyHistory					
 * group[=].element[=].display = "A.2.6 Pregnancy history"					
 * group[=].element[=].target.code = #Composition.section:sectionPregnancyHx					
@@ -227,6 +239,31 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
+* group[=].element[+].code = #PatientSummary.body.patientData.travelHistory.country					
+* group[=].element[=].display = "A.2.7.1.1 Country"					
+* group[=].element[=].target.code = #Composition.section:sectionTravelHx.text					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "if textual description"					
+* group[=].element[+].code = #PatientSummary.body.patientData.travelHistory.period					
+* group[=].element[=].display = "A.2.7.1.2 Period"					
+* group[=].element[=].target.code = #Composition.section:sectionTravelHx.text					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "if textual description"					
+* group[=].element[+].code = #PatientSummary.body.patientData.travelHistory.country					
+* group[=].element[=].display = "A.2.7.1.1 Country"					
+* group[=].element[=].target.code = #Composition.section:sectionTravelHx.entry.valueCodeableConcept					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "entry of type Observation and Obseravtion.code = http://loinc.org#94651-7 'Country of travel [Location]'
+TBD"					
+* group[=].element[+].code = #PatientSummary.body.patientData.travelHistory.period					
+* group[=].element[=].display = "A.2.7.1.2 Period"					
+* group[=].element[=].target.code = #Composition.section:sectionTravelHx.entry.effectivePeriod					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "OBSERVATION PROFILE TO BE SPECIFIED"					
 * group[=].element[+].code = #PatientSummary.body.patientData.advanceDirective					
 * group[=].element[=].display = "A.2.7.2 Advance Directive"					
 * group[=].element[=].target.code = #Composition.section:sectionAdvanceDirectives					
@@ -263,51 +300,15 @@ Usage: #definition
 //---END					
 //---END					
 //---END					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
 					
 					
 					

@@ -11,7 +11,7 @@ Description: """This profile constrains the DeviceUseStatement resource for the 
 
 Profile: DeviceXpandh
 Parent: $Device-uv-ips
-Id: Device-xpandh
+Id: Device-ps-xpandh
 Title:    "Device (EU PS)"
 Description: """This profile constrains the Device resource for the purpose of the European patient summary."""
 * ^experimental = false

@@ -1,6 +1,6 @@
 Profile: ConditionPsXpandh
 Parent: $Condition-uv-ips
-Id: Condition-ps-eu-xpandh
+Id: Condition-ps-xpandh
 Title:    "Condition (EU PS)"
 Description: """This profile constrains the Condition resource for the purpose of the European patient summary."""
 * ^experimental = false
