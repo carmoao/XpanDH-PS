@@ -34,7 +34,14 @@ Usage: #definition
 * group[=].element[=].target.code = #Composition.subject					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "To be checked"					
+					
+* group[=].element[+].code = #PatientSummary.header.insuranceInfo.insuranceNumber					
+* group[=].element[=].display = "A.1.3.1  Insurance number"					
+* group[=].element[=].target.code = #Composition.subject.identifier					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "In some cases the identifier assigned by the payor (e.g. the SSN) is used as one of the Patient Identifiers, this is how it expected to be used foe the PS.
+The appropriate resource for covneying such a kind of data is Coverage, but a dedicated section should be added to the PS."					
 * group[=].element[+].code = #PatientSummary.header.documentData					
 * group[=].element[=].display = "A.1.4 Document data"					
 * group[=].element[=].target.code = #Composition					
@@ -214,13 +221,13 @@ Usage: #definition
 * group[=].element[=].target.code = #Composition.section:sectionSocialHistory.entry					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
-//---END					
+					
 * group[=].element[+].code = #PatientSummary.body.socialHistory.referenceRange					
 * group[=].element[=].display = "A.2.5.2 Reference date range"					
 * group[=].element[=].target.code = #Composition.section:sectionSocialHistory.entry.effective[x]					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
-//---END					
+					
 * group[=].element[+].code = #PatientSummary.body.pregnancyHistory					
 * group[=].element[=].display = "A.2.6 Pregnancy history"					
 * group[=].element[=].target.code = #Composition.section:sectionPregnancyHx					
@@ -294,12 +301,6 @@ TBD"
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-//---END					
-//---END					
-//---END					
-//---END					
-//---END					
-//---END					
 //---END					
 //---END					
 //---END					

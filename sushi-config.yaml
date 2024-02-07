@@ -214,6 +214,28 @@ resources:
     name: A.2.4.1 Current and relevant past medicines model to this guide
     description: It shows how the A.2.4.1 Current and relevant past medicines data set defined by the EU eHN guidelines is mapped into this guide.
 
+  
+
+  ConceptMap/functionalStatus2FHIR-eu-ps:
+    name: A.2.3.3 Functional Status model to this guide
+    description: It shows how the A.2.3.3 Functional Status data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/medicalDevice2FHIR-eu-ps:
+    name: A.2.3.2 Medical devices and implants model to this guide
+    description: It shows how the A.2.3.2 Medical devices and implants data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/pregnancy2FHIR-eu-ps:
+    name: A.2.6 Pregnancy history model to this guide
+    description: It shows how the A.2.6 Pregnancy history data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/procedure2FHIR-eu-ps:
+    name: A.2.3.3 Procedures model to this guide
+    description: It shows how the A.2.3.3 Procedures data set defined by the EU eHN guidelines is mapped into this guide.
+
+  
+
+  
+  
   StructureDefinition/PatientSummary:
     name: A - Patient Summary
     description: A - Patient Summary. eHN guideline model.
@@ -230,17 +252,40 @@ resources:
     name: A.2.2.1 - Vaccination/prophylaxis information
     description: Vaccination/prophylaxis information. Sections A.2.2.1 of the eHN guideline.
 
+  StructureDefinition/ClosedProblem:
+    name: A.2.2.2 Resolved, closed or inactive problems model to this guide
+    description: Resolved, closed or inactive problems. Sections A.2.2.2 of the eHN guideline.
+
+
+  StructureDefinition/Problem: 
+    name: A.2.3.1 Current problems model to this guide
+    description: Current problems. Sections A.2.3.1 of the eHN guideline.
+
+  StructureDefinition/MedicalDevice: 
+    name: A.2.3.2 Medical devices and implants model to this guide
+    description: Medical devices and implants. Sections A.2.3.2 of the eHN guideline.
+  
   StructureDefinition/Medicine:
     name: A.2.4.1 Current and relevant past medicines
     description: Relevant prescribed medicines whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not, or medicines that influence current health status or are relevant to a clinical decision. Section A2.4.1 of the eHN guideline.
   
-  StructureDefinition/Problem: 
-    name: A.2.3.1 Current problems model to this guide
-    description: Current problems. Sections A.2.3.1 of the eHN guideline.
-  
-  StructureDefinition/ClosedProblem:
-    name: A.2.2.2 - Resolved, closed or inactive problems model to this guide
-    description: Resolved, closed or inactive problems. Sections A.2.2.2 of the eHN guideline.
+  StructureDefinition/FunctionalStatus: 
+    name: A.2.3.3 Functional Status model to this guide
+    description: Functional Status. Sections A.2.3.3 of the eHN guideline.
+   
+  StructureDefinition/ProcedurePs: 
+    name: A.2.3.3  Procedures model to this guide
+    description: Procedures. Sections A.2.3.3 of the eHN guideline.
+
+  StructureDefinition/Pregnancy: 
+    name: A.2.6 Pregnancy history model to this guide
+    description: Pregnancy history. Sections A.2.6 of the eHN guideline.
+
+  StructureDefinition/Result: 
+    name: A.2.8 Results model to this guide
+    description: Results. Sections A.2.8 of the eHN guideline.
+
+
 
 #  Patient/bad-example: omit
 
@@ -265,7 +310,13 @@ groups:
       - StructureDefinition/Allergy
       - StructureDefinition/Vaccination
       - StructureDefinition/Medicine
-#      - StructureDefinition/LegalAuthenticator
+      - StructureDefinition/ClosedProblem
+      - StructureDefinition/Problem
+      - StructureDefinition/MedicalDevice
+      - StructureDefinition/FunctionalStatus
+      - StructureDefinition/ProcedurePs
+      - StructureDefinition/Pregnancy
+      - StructureDefinition/Result
 #      - StructureDefinition/Payer
 
   logicalModelsMaps:
@@ -281,6 +332,11 @@ groups:
       - ConceptMap/problem2FHIR-eu-ps
       - ConceptMap/result2FHIR-eu-ps
       - ConceptMap/medicine2FHIR-eu-ps
+      - ConceptMap/functionalStatus2FHIR-eu-ps
+      - ConceptMap/medicalDevice2FHIR-eu-ps
+      - ConceptMap/pregnancy2FHIR-eu-ps
+      - ConceptMap/procedure2FHIR-eu-ps
+  
 
 
 #     - ConceptMap/author2FHIR-eu-ps

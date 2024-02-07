@@ -8,6 +8,7 @@ Description:  """Patient Summary. eHN guideline model."""
 * header 1..1 BackboneElement "A.1 Report header data elements" """A.1 Report header data elements"""				
 * header.subject 1..1 http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Subject "A.1.1 A1.2 Patient/subject" """A.1.1 Identification of the patient/subject and A.1.2 Patient/subject related contact information  """				
 * header.insuranceInfo 0..1 BackboneElement "A.1.3 Insurance information" """A.1.3 Insurance information"""				
+* header.insuranceInfo.insuranceNumber 0..* Identifier "A.1.3.1  Insurance number" """Example: QQ 12 34 56 A"""				
 * header.documentData 1..1 BackboneElement "A.1.4 Document data" """A.1.4 Document data"""				
 * header.documentData.created 1..1 dateTime "A.1.4.1 Date created" """A.1.4.1 Date created - Date on which PS was generated"""				
 * header.documentData.lastUpdate 0..1 dateTime "A.1.4.2 Date of last update" """A.1.4.2 Date of last update - Date on which PS was updated (date of most recent version)
@@ -57,7 +58,6 @@ Preferred system: SNOMED CT GPS"""
 * body.results 0..1 http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Result "A.2.8 Results" """A.2.8 - Results"""				
 * body.planOfCare 0..1 BackboneElement "A.2.9 Plan of Care" """(Therapeutic recommendations that do not include pharmacologic treatments, such as diet, physical exercise, planned surgeries)"""				
 * body.planOfCare.carePlan 0..* string "A.2.9.1 Plan of care" """Narrative containing the plan including proposals, goals, and vaccination requests for monitoring, tracking, or improving the condition of the patient. In the future it is expected that this Section could be provided in a structured and coded format."""				
-//--- END				
 //--- END				
 //--- END				
 //--- END				

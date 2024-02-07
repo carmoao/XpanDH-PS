@@ -2,7 +2,7 @@
 //  Logical Model				ps-procedures.fsh
 // -------------------------------------------------------------------------------				
 Logical: ProcedurePsEhn				
-Id: Procedure				
+Id: ProcedurePs				
 Title: "A.2.3.3 - Procedures"				
 Description:  """Procedures.Section A.2.3.3 of the eHN guideline."""				
 * description 0..* CodeableConcept "A.2.3.3.1 Procedure description" """Describes the type of procedure - Preferred system(s): SNOMED CT GPS*"""				
