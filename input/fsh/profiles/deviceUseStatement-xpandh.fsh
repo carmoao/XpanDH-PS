@@ -1,12 +1,13 @@
 Profile: DeviceUseStatementXpandh
 Parent: $DeviceUseStatement-uv-ips
-Id: DeviceUseStatement-xpandh
-Title:    "Device Use Statement"
+Id: DeviceUseStatement-ps-xpandh
+Title:    "Device Use Statement (EU PS)"
 Description: """This profile constrains the DeviceUseStatement resource for the purpose of the European patient summary."""
 * ^experimental = false
 * ^purpose = "This profile constrains the DeviceUseStatement resource for the purpose of the European patient summary."
 * device only Reference(DeviceXpandh)
 * subject only Reference(PatientPsXpandh)
+* timing[x] ^short = "When the device was used"
 
 
 Profile: DeviceXpandh

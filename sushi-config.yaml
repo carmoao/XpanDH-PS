@@ -202,9 +202,9 @@ resources:
     name: A.2.3.1 Current problems model to this guide
     description: It shows how the A.2.3.1 Current problems data set defined by the EU eHN guidelines is mapped into this guide.
   
-  ConceptMap/closedproblem2FHIR-eu-ps:
-    name: A.2.2.2 - Resolved, closed or inactive problems model to this guide
-    description: It shows how the A.2.2.2 - Resolved, closed or inactive problems data set defined by the EU eHN guidelines is mapped into this guide.
+ # ConceptMap/closedproblem2FHIR-eu-ps:
+ #   name: A.2.2.2 - Resolved, closed or inactive problems model to this guide
+ #   description: It shows how the A.2.2.2 - Resolved, closed or inactive problems data set defined by the EU eHN guidelines is mapped into this guide.
 
   ConceptMap/result2FHIR-eu-ps:
     name: A.2.8 - Results model to this guide
@@ -328,7 +328,7 @@ groups:
       - ConceptMap/patientSummary2FHIR-eu-ps
       - ConceptMap/allergy2FHIR-eu-ps
       - ConceptMap/vaccination2FHIR-eu-ps
-      - ConceptMap/closedproblem2FHIR-eu-ps
+  #    - ConceptMap/closedproblem2FHIR-eu-ps
       - ConceptMap/problem2FHIR-eu-ps
       - ConceptMap/result2FHIR-eu-ps
       - ConceptMap/medicine2FHIR-eu-ps

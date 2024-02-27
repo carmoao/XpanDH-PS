@@ -106,5 +106,6 @@ Alias: $Ratio-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-i
 Alias: $Quantity-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips
 
 Alias: $Observation-results-laboratory-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips
-
+Alias: $Observation-results-radiology-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips
+Alias: $Observation-results-pathology-uv-ips = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips
 //=========================

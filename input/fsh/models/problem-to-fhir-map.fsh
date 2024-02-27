@@ -28,7 +28,7 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-* group[=].element[+].code = #Problem.endDate					
+* group[=].element[+].code = #Problem.assertionStatus					
 * group[=].element[=].display = "A.2.3.1.3 Diagnosis assertion status"					
 * group[=].element[=].target.code = #Condition.verificationStatus					
 * group[=].element[=].target.display = ""					

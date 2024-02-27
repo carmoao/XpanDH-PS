@@ -1,7 +1,7 @@
 ValueSet:      EHDSIProblemCode
 Id:	       eHDSIProblemCode
-Title:	       "Problems or no known or unknown conditions"
-Description:   """Problems or no known or unknown conditions""" 
+Title:	       "Problems (including unknown conditions)"
+Description:   """Problems (including unknown conditions)""" 
 * ^experimental = false
 
 * codes from valueset EHDSIIllnessandDisorder

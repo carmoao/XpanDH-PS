@@ -12,10 +12,10 @@ Usage: #definition
 * description = "eHN Medical Devices Model to this guide Map"					
 * purpose = "It shows how theMedical Devices Recipient data set defined by the EU eHN guidelines is mapped into this guide"					
 * sourceUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/MedicalDevice"					
-* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/DeviceUseStatement-eu-ps"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/DeviceUseStatement-ps-xpandh"					
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/MedicalDevice"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/DeviceUseStatement-eu-ps"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/DeviceUseStatement-ps-xpandh"					
 					
 * group[=].element[+].code = #MedicalDevice.description					
 * group[=].element[=].display = "A.2.3.2.1 Device and implant description"					

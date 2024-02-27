@@ -1,7 +1,7 @@
 // -------------------------------------------------------------------------------					
 //  Concept Model. File: 					medicine-to-fhir-map.fsh
 // -------------------------------------------------------------------------------					
-Instance: medicine2FHIR-eu-ps									
+Instance: medicine2FHIR-eu-ps					
 InstanceOf: ConceptMap					
 Usage: #definition					
 // * url = "http://terminology.hl7.it/ConceptMap/ConceptMap-subject2osiris"					
@@ -40,7 +40,7 @@ Usage: #definition
 * group[=].element[=].target.code = #MedicationStatement.medication[x]					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
-					
+* group[=].element[=].target.comment = "see group 2"					
 * group[=].element[+].code = #Medicine.activeIngredient					
 * group[=].element[=].display = "A.2.4.1.4 Active ingredient lists"					
 * group[=].element[=].target.code = #MedicationStatement.medication[x]					
@@ -58,7 +58,7 @@ Usage: #definition
 * group[=].element[=].target.code = #MedicationStatement.medication[x]					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "see group 3"					
+* group[=].element[=].target.comment = "see group 2"					
 * group[=].element[+].code = #Medicine.dosageRegimen					
 * group[=].element[=].display = "A.2.4.1.7 Dosage Regimen"					
 * group[=].element[=].target.code = #MedicationStatement.dosage					
@@ -85,12 +85,6 @@ Usage: #definition
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine"					
 * group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medication-ps-xpandh"					
-					
-* group[=].element[+].code = #Medicine.reason					
-* group[=].element[=].display = "A.2.4.1.1 Medication reason"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
 					
 * group[=].element[+].code = #Medicine.intendedUse					
 * group[=].element[=].display = "A.2.4.1.2 Intended use"					
@@ -122,23 +116,29 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-* group[=].element[+].code = #Medicine.dosageRegimen					
-* group[=].element[=].display = "A.2.4.1.7 Dosage Regimen"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-					
 * group[=].element[+].code = #Medicine.route					
 * group[=].element[=].display = "A.2.4.1.8 Route of administration"					
 * group[=].element[=].target.code = #Medication.					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 * group[=].element[=].target.comment = "TBD"					
-* group[=].element[+].code = #Medicine.onsetDate					
-* group[=].element[=].display = "A.2.4.1.9 Date of onset of treatment"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					

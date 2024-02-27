@@ -5,7 +5,7 @@ Title:    "Procedure (EU PS)"
 Description: """This profile constrains the Procedure resource for the purpose of the European patient summary."""
 * ^experimental = false
 * ^purpose = "This profile constrains the Procedure resource for the purpose of the European patient summary."
-* code from EHDSIProblemCode (extensible)
+* code ^short = "ADD VOOC BINDING" // from EHDSIProblemCode (extensible)
 * subject only Reference(PatientPsXpandh)
 * performed[x] only dateTime or Period // is this needed ?
 
