@@ -31,16 +31,16 @@ Usage: #definition
 * group[=].element[=].target.comment = "if provided as a reference to a Condition"					
 * group[=].element[+].code = #Medicine.intendedUse					
 * group[=].element[=].display = "A.2.4.1.2 Intended use"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "TBD"					
+* group[=].element[=].target.code = #MedicationStatement.category					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "this map adopt  the definiiton given in R5"					
 * group[=].element[+].code = #Medicine.productName					
 * group[=].element[=].display = "A.2.4.1.3 Brand name"					
 * group[=].element[=].target.code = #MedicationStatement.medication[x]					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "see group 2"					
+* group[=].element[=].target.comment = "—"					
 * group[=].element[+].code = #Medicine.activeIngredient					
 * group[=].element[=].display = "A.2.4.1.4 Active ingredient lists"					
 * group[=].element[=].target.code = #MedicationStatement.medication[x]					
@@ -67,10 +67,10 @@ Usage: #definition
 					
 * group[=].element[+].code = #Medicine.route					
 * group[=].element[=].display = "A.2.4.1.8 Route of administration"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "TBD"					
+* group[=].element[=].target.code = #MedicationStatement.extension:dosage.extension:route.valueCodeableConcept					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+					
 * group[=].element[+].code = #Medicine.onsetDate					
 * group[=].element[=].display = "A.2.4.1.9 Date of onset of treatment"					
 * group[=].element[=].target.code = #MedicationStatement.effectivePeriod.start					
@@ -86,18 +86,12 @@ Usage: #definition
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medicine"					
 * group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Medication-ps-xpandh"					
 					
-* group[=].element[+].code = #Medicine.intendedUse					
-* group[=].element[=].display = "A.2.4.1.2 Intended use"					
-* group[=].element[=].target.code = #Medication.					
-* group[=].element[=].target.display = ""					
-* group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "TBD"					
 * group[=].element[+].code = #Medicine.productName					
 * group[=].element[=].display = "A.2.4.1.3 Brand name"					
 * group[=].element[=].target.code = #Medication.code.text					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "TBD"					
+					
 * group[=].element[+].code = #Medicine.activeIngredient					
 * group[=].element[=].display = "A.2.4.1.4 Active ingredient lists"					
 * group[=].element[=].target.code = #Medication.ingredient.itemCodeableConcept					
@@ -122,6 +116,12 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 * group[=].element[=].target.comment = "TBD"					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
 					
 					
 					

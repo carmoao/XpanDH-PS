@@ -4,6 +4,7 @@
 
 Alias: $immunization-administeredProduct-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct
 Alias: $immunization-basedOn-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn
+Alias: $medicationStatement-dosage-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.dosage
 
 //------- Code Systems
 Alias: $loinc = http://loinc.org

@@ -5,6 +5,8 @@ Title:    "Medication Statement (EU PS)"
 Description: """This profile constrains the MedicationStatement resource for the purpose of the European patient summary."""
 * ^experimental = false
 * ^purpose = "This profile constrains the MedicationStatement resource for the purpose of the European patient summary."
+* extension contains $medicationStatement-dosage-r5 named dosage 0..*
+* extension[dosage].extension[route].valueCodeableConcept
 * medicationReference 1..
 * medicationReference only Reference ( MedicationPsXpandh )
 * subject only Reference (PatientPsXpandh)
