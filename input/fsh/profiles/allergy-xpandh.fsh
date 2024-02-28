@@ -8,13 +8,13 @@ Description: """This profile constrains the AllergyIntolerance resource for the 
 * extension[abatement-datetime] ^short = "End date"
 * clinicalStatus ^short = "Current allergy or Intolerance status"
 * type ^short = "Type of propensity"
-* code from EHDSIAllergyCode (extensible)
+* code from EHDSIAllergyCode (preferred)
 * verificationStatus ^short = "Certainty"
 * criticality ^short = "Criticality"
 * patient only Reference(PatientPsXpandh)
 // * onset[x] only dateTime // is this needed ?
 * onsetDateTime ^short = "Onset date"
-* reaction.substance from EHDSIAllergens  (extensible)
-* reaction.manifestation from EHDSIReactionAllergy (extensible)
+* reaction.substance from EHDSIAllergens  (preferred)
+* reaction.manifestation from EHDSIReactionAllergy (preferred)
 * reaction.severity ^short = "Severity"
 

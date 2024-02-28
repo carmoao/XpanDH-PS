@@ -36,7 +36,7 @@ Description: """This profile constrains the Immunization resource for the purpos
 * vaccineCode.coding[sctVaccines] from SctCovid19Vaccines */
 //* vaccineCode.coding[icd11Vaccines] from Icd11Covid19Vaccines  icd11 has not been selected by SGS
 
-* vaccineCode from EHDSIVaccine (extensible)
+* vaccineCode from EHDSIVaccine (preferred)
 * vaccineCode.text ^short = "Name of the vaccine" // brandName
 
 * patient only Reference(PatientPsXpandh)
@@ -88,7 +88,7 @@ Description: """This profile defines how to represent Immunization Recommandatio
 
 * date MS
 * patient MS
-* recommendation.vaccineCode from EHDSIVaccine (extensible) 
+* recommendation.vaccineCode from EHDSIVaccine (preferred) 
   * ^short = "Generic description of the vaccine/prophylaxis or its component(s)"
 * recommendation.targetDisease from EHDSIIllnessandDisorder (preferred) // Check Value Set
   * ^short = "Disease or agent that the vaccination provides protection against"
