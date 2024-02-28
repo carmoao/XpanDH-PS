@@ -15,7 +15,7 @@ Usage: #definition
 * targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Bundle-eu-ps"					
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/PatientSummary"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Composition-eu-ps"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Composition-ps-xpandh"					
 					
 * group[=].element[+].code = #PatientSummary.header					
 * group[=].element[=].display = "A.1 Report header data elements"					
@@ -59,7 +59,13 @@ The appropriate resource for covneying such a kind of data is Coverage, but a de
 * group[=].element[=].target.code = #Composition.event:careProvisioningEvent.period.end					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "To be checked"					
+* group[=].element[=].target.comment = "If it represents the period of time this Patient Summary is covering"					
+* group[=].element[+].code = #PatientSummary.header.documentData.lastUpdate					
+* group[=].element[=].display = "A.1.4.2 Date of last update"					
+* group[=].element[=].target.code = #Composition.meta.lastUpdated					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "If it represents the last update of this FHIR resource"					
 * group[=].element[+].code = #PatientSummary.header.documentData.natureOfIPS					
 * group[=].element[=].display = "A.1.4.3 Nature of the PS"					
 * group[=].element[=].target.code = #Composition.author					
@@ -68,7 +74,7 @@ The appropriate resource for covneying such a kind of data is Coverage, but a de
 * group[=].element[=].target.comment = "the nature of a PS is determined as a comobination of type if author and legal authenticator. Future versions may cosndier to use Provenance data for this scope"					
 * group[=].element[+].code = #PatientSummary.header.participant					
 * group[=].element[=].display = "A.1.5 Author and Organisation"					
-* group[=].element[=].target.code = #Composition.author					
+* group[=].element[=].target.code = #Composition					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
@@ -182,7 +188,7 @@ The appropriate resource for covneying such a kind of data is Coverage, but a de
 					
 * group[=].element[+].code = #PatientSummary.body.medicalProblems.medicalDevices					
 * group[=].element[=].display = "A.2.3.2 Medical devices and implants"					
-* group[=].element[=].target.code = #Composition.ÿsection:sectionMedicalDevices					
+* group[=].element[=].target.code = #Composition.section:sectionMedicalDevices					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
@@ -301,12 +307,6 @@ TBD"
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-//---END					
-//---END					
-//---END					
-//---END					
-//---END					
-//---END					
 //---END					
 //---END					
 //---END					
