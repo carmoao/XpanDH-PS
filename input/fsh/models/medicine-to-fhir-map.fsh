@@ -34,13 +34,13 @@ Usage: #definition
 * group[=].element[=].target.code = #MedicationStatement.category					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "this map adopt  the definiiton given in R5"					
+* group[=].element[=].target.comment = "this map adopts  the definition given in R5"					
 * group[=].element[+].code = #Medicine.productName					
 * group[=].element[=].display = "A.2.4.1.3 Brand name"					
 * group[=].element[=].target.code = #MedicationStatement.medication[x]					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "—"					
+* group[=].element[=].target.comment = "see group 2"					
 * group[=].element[+].code = #Medicine.activeIngredient					
 * group[=].element[=].display = "A.2.4.1.4 Active ingredient lists"					
 * group[=].element[=].target.code = #MedicationStatement.medication[x]					
@@ -110,18 +110,18 @@ Usage: #definition
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
-* group[=].element[+].code = #Medicine.route					
-* group[=].element[=].display = "A.2.4.1.8 Route of administration"					
-* group[=].element[=].target.code = #Medication.					
-* group[=].element[=].target.display = ""					
-* group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "TBD"					
 //---END					
 //---END					
 //---END					
-//---END					
-//---END					
-//---END					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					
