@@ -5,13 +5,15 @@ Title:    "Medication Statement (EU PS)"
 Description: """This profile constrains the MedicationStatement resource for the purpose of the European patient summary."""
 * ^experimental = false
 * ^purpose = "This profile constrains the MedicationStatement resource for the purpose of the European patient summary."
-* extension contains $medicationStatement-dosage-r5 named dosage 0..*
+/* * extension contains $medicationStatement-dosage-r5 named dosage 0..*
 * extension[dosage].extension[route].valueCodeableConcept from EHDSIRouteofAdministration (preferred)
+ */
 * medicationReference 1..
 * medicationReference only Reference ( MedicationPsXpandh )
 * subject only Reference (PatientPsXpandh)
 * reasonCode from EHDSICondition (preferred)
 * reasonReference only Reference(ConditionPsXpandh or Observation or DiagnosticReport) // Only for HDR ?
+* dosage.route from EHDSIRouteofAdministration (preferred)
 
 //------
 * dosage ^short =  	"How medication is/was taken or should be taken"

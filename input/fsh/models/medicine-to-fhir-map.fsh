@@ -67,7 +67,7 @@ Usage: #definition
 					
 * group[=].element[+].code = #Medicine.route					
 * group[=].element[=].display = "A.2.4.1.8 Route of administration"					
-* group[=].element[=].target.code = #MedicationStatement.extension:dosage.extension:route.valueCodeableConcept					
+* group[=].element[=].target.code = #MedicationStatement.dosage.route					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
