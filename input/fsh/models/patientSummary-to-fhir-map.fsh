@@ -122,9 +122,9 @@ The appropriate resource for covneying such a kind of data is Coverage, but a de
 					
 * group[=].element[+].code = #PatientSummary.body.alerts.allergy					
 * group[=].element[=].display = "A.2.1.1 Allergy"					
-* group[=].element[=].target.code = #Composition.section:sectionAllergies.entry					
+* group[=].element[=].target.code = #Composition.section:sectionAllergies					
 * group[=].element[=].target.display = ""					
-* group[=].element[=].target.equivalence = #equivalent					
+* group[=].element[=].target.equivalence = #relatedto					
 					
 * group[=].element[+].code = #PatientSummary.body.alerts.alert					
 * group[=].element[=].display = "A.2.1.2 Medical alert information (other alerts not included in allergies)"					
@@ -137,13 +137,13 @@ The appropriate resource for covneying such a kind of data is Coverage, but a de
 * group[=].element[=].target.code = #Composition.section:sectionAlert.text					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-					
+* group[=].element[=].target.comment = "Common textual descirption"					
 * group[=].element[+].code = #PatientSummary.body.alerts.alert.description					
 * group[=].element[=].display = "A.2.1.2.1 Healthcare alert description"					
 * group[=].element[=].target.code = #Composition.section:sectionAlert.entry.code.text					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "entry of type Flag"					
+* group[=].element[=].target.comment = "entry level description"					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory					
 * group[=].element[=].display = "A.2.2 Medical history"					
 * group[=].element[=].target.code = #Composition.section					
@@ -152,13 +152,13 @@ The appropriate resource for covneying such a kind of data is Coverage, but a de
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.vaccination					
 * group[=].element[=].display = "A.2.2.1 Vaccination/ prophylaxis information"					
-* group[=].element[=].target.code = #Composition.section:sectionImmunizations.entry					
+* group[=].element[=].target.code = #Composition.section:sectionImmunizations					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
 * group[=].element[+].code = #PatientSummary.body.medicalHistory.inactiveProblem					
 * group[=].element[=].display = "A.2.2.2 Resolved, closed or inactive problems"					
-* group[=].element[=].target.code = #Composition.section:sectionPastIllnessHx.entry					
+* group[=].element[=].target.code = #Composition.section:sectionPastIllnessHx					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
 					
@@ -312,16 +312,30 @@ TBD"
 //---END					
 					
 					
+* group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/PatientSummary"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-xpandh"					
 					
+* group[=].element[+].code = #PatientSummary.header.additionalInfo					
+* group[=].element[=].display = "A.1.6 Additional information / Knowledge resources"					
+* group[=].element[=].target.code = #Condition.extension:supporintInfo					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
 					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+* group[=].element[+].code = #PatientSummary.header.additionalInfo.reference					
+* group[=].element[=].display = "A.1.6.1 External reference"					
+* group[=].element[=].target.code = #Condition.extension:supporintInfo					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "extension[supporintInfo].resolve().ofType(DocumentReference)"					
+* group[=].element[+].code = #PatientSummary.header.additionalInfo.relatedWith					
+* group[=].element[=].display = "A.1.6.2 Related with"					
+* group[=].element[=].target.code = #Condition					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "the containing resource describes the context in this case the Condition"					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					
+//---END					

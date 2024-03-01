@@ -184,7 +184,7 @@ resources:
 
   ConceptMap/patientSummary2FHIR-eu-ps:
     name: A - Patient Summary model to this guide
-    description: It shows how the Patient Summary data set defined by the EU eHN guidelines is mapped into this guide.
+    description: It shows how the Patient Summary data set defined by the EU eHN guidelines is mapped into this guide. The proposed mapping shows how to represent 'addiitonalInfo' in the casae of a condition, equivalent solution can be applied for other kind of information (e.g. Medications)
 
   ConceptMap/subject2FHIR-eu-ps:
     name: A.1.1, A.1.2 - Subject of care model to this guide
