@@ -323,7 +323,6 @@ groups:
     name:  eHN Logical Model mappings
     description: Concept Maps describing how the eHN Laboratory Guidelines are supposed to be implemented by using this guide
     resources:
-#     - ConceptMap/payer2FHIR-eu-ps
       - ConceptMap/subject2FHIR-eu-ps
       - ConceptMap/patientSummary2FHIR-eu-ps
       - ConceptMap/allergy2FHIR-eu-ps

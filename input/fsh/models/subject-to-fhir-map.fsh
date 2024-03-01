@@ -5,21 +5,21 @@ Instance: subject2FHIR-eu-ps
 InstanceOf: ConceptMap					
 Usage: #definition					
 // * url = "http://terminology.hl7.it/ConceptMap/ConceptMap-subject2osiris"					
-* name = "LabRptSubject2Fhir"					
+* name = "PatientSummarySubject2Fhir"					
 * title = "eHN Subject to this guide Map"					
 * status = #draft					
 * experimental = true					
 * description = "eHN Subject Model to this guide Map"					
 * purpose = "It shows how the Patient Summary Subject data set defined by the EU eHN guidelines is mapped into this guide"					
 * sourceUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Subject"					
-* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Patient-ps-xpandh"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Bundle-ps-xpandh"					
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Subject"					
 * group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Patient-ps-xpandh"					
 					
 * group[=].element[+].code = #Subject.identification					
 * group[=].element[=].display = "A.1.1 Identification of the patient/subject"					
-* group[=].element[=].target.code = #Patient.Patient					
+* group[=].element[=].target.code = #Patient					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
 					
@@ -138,48 +138,6 @@ http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
 //-- unmatched					
 * group[=].element[=].target.equivalence = #unmatched					
 * group[=].element[=].target.comment = "To be mapped in differetn places"					
-* group[=].element[+].code = #Subject.hpToContact.name					
-* group[=].element[=].display = "A.1.2.2.1 Name of the HP"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "To be mapped in differetn places"					
-* group[=].element[+].code = #Subject.hpToContact.role					
-* group[=].element[=].display = "A.1.2.2.2 Role of the HP"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "To be mapped in differetn places"					
-* group[=].element[+].code = #Subject.hpToContact.organization					
-* group[=].element[=].display = "A.1.2.2.3 HP Organisation"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "To be mapped in differetn places"					
-* group[=].element[+].code = #Subject.hpToContact.telephone					
-* group[=].element[=].display = "A.1.2.2.4 Telephone no."					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "To be mapped in differetn places"					
-* group[=].element[+].code = #Subject.hpToContact.email					
-* group[=].element[=].display = "A.1.2.2.5 Email"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "To be mapped in differetn places"					
-* group[=].element[+].code = #Subject.hpToContact.affiliatedNetwork					
-* group[=].element[=].display = "A.1.2.2.6 Network affiliation"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "To be mapped in differetn places"					
-* group[=].element[+].code = #Subject.hpToContact.relatedWith					
-* group[=].element[=].display = "A.1.2.2.7 Related with"					
-//-- unmatched					
-//-- unmatched					
-* group[=].element[=].target.equivalence = #unmatched					
-* group[=].element[=].target.comment = "To be mapped in differetn places"					
 * group[=].element[+].code = #Subject.contactPerson					
 * group[=].element[=].display = "A.1.2.3 Contact person/ legal guardian "					
 * group[=].element[=].target.code = #Patient.contact					
@@ -229,8 +187,65 @@ http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
 //---END					
 //---END					
 //---END					
-//---END					
-//---END					
+					
+					
+* group[+].source = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Subject"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/ps/StructureDefinition/Condition-ps-xpandh"					
+					
+* group[=].element[+].code = #Subject.identification					
+* group[=].element[=].display = "A.1.1 Identification of the patient/subject"					
+* group[=].element[=].target.code = #Condition.subject					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+					
+* group[=].element[+].code = #Subject.hpToContact					
+* group[=].element[=].display = "A.1.2.2 Preferred HP to contact"					
+* group[=].element[=].target.code = #Condition.participant.actor					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "where function = TBD"					
+* group[=].element[+].code = #Subject.hpToContact.name					
+* group[=].element[=].display = "A.1.2.2.1 Name of the HP"					
+* group[=].element[=].target.code = #Condition.participant.actor.practitioner.name					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[+].code = #Subject.hpToContact.role					
+* group[=].element[=].display = "A.1.2.2.2 Role of the HP"					
+* group[=].element[=].target.code = #Condition.participant.actor.code					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[+].code = #Subject.hpToContact.organization					
+* group[=].element[=].display = "A.1.2.2.3 HP Organisation"					
+* group[=].element[=].target.code = #Condition.participant.actor.organization					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[+].code = #Subject.hpToContact.telephone					
+* group[=].element[=].display = "A.1.2.2.4 Telephone no."					
+* group[=].element[=].target.code = #Condition.participant.actor.telecom					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[+].code = #Subject.hpToContact.email					
+* group[=].element[=].display = "A.1.2.2.5 Email"					
+* group[=].element[=].target.code = #Condition.participant.actor.telecom					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[+].code = #Subject.hpToContact.affiliatedNetwork					
+* group[=].element[=].display = "A.1.2.2.6 Network affiliation"					
+* group[=].element[=].target.code = #Condition.participant.actor.organization					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "This might be described by using a CareTeam having this organization as participant.member"					
+* group[=].element[+].code = #Subject.hpToContact.relatedWith					
+* group[=].element[=].display = "A.1.2.2.7 Related with"					
+* group[=].element[=].target.code = #Condition					
+* group[=].element[=].target.display = ""					
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "The contact is intrinsically connected with the Condition"					
 //---END					
 //---END					
 //---END					

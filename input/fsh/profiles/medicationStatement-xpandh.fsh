@@ -10,7 +10,7 @@ Description: """This profile constrains the MedicationStatement resource for the
  */
 * medicationReference 1..
 * medicationReference only Reference ( MedicationPsXpandh )
-* category ^short = "Type of medication statement"
+* category ^short = "Type of medication statement."
 * subject only Reference (PatientPsXpandh)
 * reasonCode from EHDSICondition (preferred)
 * reasonReference only Reference(ConditionPsXpandh or Observation or DiagnosticReport) // Only for HDR ?
