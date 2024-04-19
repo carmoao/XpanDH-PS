@@ -137,10 +137,16 @@ For the eHDSI Patient Summary this is a mandatory section and shall be used to r
   * ^short = "eHDSI Pregnancy History"
   * ^definition = """The pregnancy history section contains coded entries describing the patient history of pregnancies.
 This section is used in eHDSI only for the purpose of providing the Expected Date of Delivery, when applicable, not the full history of pregnancies."""
+  * title ^short = "Pregnancy Section title"
+  * entry[pregnancyStatus] ^short = "Pregnancy status"
+  * entry[pregnancyOutcomeSummary] ^short = "Pregnancy outcome summary"
+  
 * section[sectionAdvanceDirectives]
   * ^short = "eHDSI Advance Directives Section"
   * ^definition = """The advance directive section contains a narrative description of patient's advance directive. The optional author and informant elements are used when necessary to convey the provenance and authoring of the section content in case it is different from what is announced in the CDA header.
 Entries for references to consent and advance directive documents when known will be specified by future versions of this template."""
+
+
 * section[sectionAdvanceDirectives]
   * ^short = "eHDSI Advance Directives Section"
   * ^definition = """The advance directive section contains a narrative description of patient's advance directive. The optional author and informant elements are used when necessary to convey the provenance and authoring of the section content in case it is different from what is announced in the CDA header.

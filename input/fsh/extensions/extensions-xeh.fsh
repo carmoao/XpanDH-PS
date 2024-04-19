@@ -6,6 +6,7 @@ It simulates the beahviour of the reference part of the administeredProduct R5 e
 // publisher, contact, and other metadata here using caret (^) syntax (omitted)
 * ^context[+].type = #element
 * ^context[=].expression = "Immunization"
+* value[x] 0..0
 * extension contains concept 0..1 and reference 0..1
 * extension[concept].value[x] only CodeableConcept
 * extension[reference].value[x] only Reference
@@ -20,6 +21,21 @@ Description: """This extension refers other resources from the patient record th
 * ^context[=].expression = "Condition"
 * value[x] only Reference
 * valueReference only Reference(DocumentReference)
+
+
+Extension: ConditionStatusReason
+Id:   condition-statusReason
+Title:  "Condition Status Reason"
+Description: """This extension describe the reasons for the condition status, e.g. how this condition has been resolved"""
+// publisher, contact, and other metadata here using caret (^) syntax (omitted)
+* ^context[+].type = #element
+* ^context[=].expression = "Condition"
+* value[x] 0..0
+* extension contains concept 0..1 and reference 0..1
+* extension[concept].value[x] only CodeableConcept
+* extension[reference].value[x] only Reference
+* extension[reference].valueReference only Reference (Procedure or MedicationStatement or CarePlan or MedicationAdministration)
+
 
 /* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

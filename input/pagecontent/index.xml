@@ -25,11 +25,6 @@
 An overview of the project - including the description of some of the used concepts - is provided in the <a href="https://build.fhir.org/ig/hl7-eu/xpandh/index.html"> General XpanDH FHIR IG.</a>
 
 
-  <a name="dependencies"></a>
-  <h3>Dependencies</h3>
-
-{% include dependency-table.xhtml %}
-
   <a name="x-versions"></a>
   <h3>Cross Version Analysis</h3>
 
