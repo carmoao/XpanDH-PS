@@ -79,9 +79,10 @@ The field \"alerts\" was originally defined to include all the important and obj
 * section contains sectionAlert ..1
 * section[sectionAlert]
   * insert SectionComRules ( 
-    Health Concern Section, // SHORT
-      This section contains data describing an interest or worry about a health state or process that could possibly require attention\, intervention\, or management. A Health Concern is a health related matter that is of interest\, importance or worry to someone\, who may be the patient\, patient's family or patient's health care provider. Health concerns are derived from a variety of sources within an EHR\, such as Problem List\, Family History\, Social Histor\, Social Worker Note\, etc. Health concerns can be medical\, surgical\, nursing\, allied health or patient-reported concerns. Problem Concerns are a subset of Health Concerns that have risen to the level of importance that they typically would belong on a classic “Problem List”\, such as “Diabetes Mellitus” or “Family History of Melanoma” or “Tobacco abuse”. These are of broad interest to multiple members of the care team. Examples of other Health Concerns that might not typically be considered a Problem Concern include “Risk of Hyperkalemia” for a patient taking an ACE-inhibitor medication\, or “Transportation difficulties” for someone who doesn't drive and has trouble getting to appointments\, or “Under-insured” for someone who doesn't have sufficient insurance to properly cover their medical needs such as medications. These are typically most important to just a limited number of care team members, // DESC
-      http://loinc.org#75310-3 )   // Check CODE
+      Alerts Section, 
+      Information used to warn or call to a state of preparedness. Information flagged or intended to raise awareness of a potential danger to from the subject of the IPS or to from another individual or awareness of a potential obstacle to care. , 
+      http://loinc.org#104605-1 )   
+
   * entry 0..
   * insert SectionEntrySliceComRules(Alerts, Alerts)
   // entry slices
@@ -158,4 +159,7 @@ Entries for references to consent and advance directive documents when known wil
 
 * section contains sectionPatientHx ..1
 * section[sectionPatientHx]
-  * insert SectionComRules ( Patient History Section, This Section describes all aspects of the medical history of the patient even if not pertinent to the current procedure\, and may include chief complaint\, past medical history\, social history\, family history\, surgical or procedure history\, medication history\, and other history information. The history may be limited to information pertinent to the current procedure or may be more comprehensive. The history may be reported as a collection of random clinical statements or it may be reported categorically. Categorical report formats may be divided into multiple subsections including Past Medical History\, Social History., http://loinc.org#11329-0 )
+  * insert SectionComRules ( 
+    Patient History Section,
+    This section may provide both synthetic anamnesis \,e.g. description of phases of the pathology as a chronological summary of clustered clinical information\, and anecdotal evidence that clinicians can collect from the patient\, and can read in a narrative form.,
+    http://loinc.org#11329-0 )
