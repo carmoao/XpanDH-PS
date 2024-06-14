@@ -15,6 +15,10 @@ Description: """This profile constrains the Condition resource for the purpose o
 * extension[participantR5].actor
 
 
+* extension contains ConditionStatusReason named statusReason 0..1
+
+
+
 * code from EHDSIProblemCode (preferred)
 * participant.actor
 * severity from EHDSISeverity

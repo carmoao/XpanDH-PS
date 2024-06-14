@@ -36,10 +36,10 @@ Usage: #definition
 					
 * group[=].element[+].code = #ClosedProblem.resolution					
 * group[=].element[=].display = "A.2.2.2.4 Resolution circumstances"					
-* group[=].element[=].target.code = #Condition.					
+* group[=].element[=].target.code = #Condition.extension:statusReason					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "TBD"					
+					
 //---END					
 //---END					
 //---END					
