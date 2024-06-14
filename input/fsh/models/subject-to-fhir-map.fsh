@@ -200,46 +200,46 @@ http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
 					
 * group[=].element[+].code = #Subject.hpToContact					
 * group[=].element[=].display = "A.1.2.2 Preferred HP to contact"					
-* group[=].element[=].target.code = #Condition.participant.actor					
+* group[=].element[=].target.code = #Condition.extension:participantR5.actor					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "where function = TBD"					
+* group[=].element[=].target.comment = "where extension:participantR5.function = http://terminology.hl7.org/CodeSystem/v2-0131#CP Contact Person AND extension:participantR5.actor of type PracticionerRole"					
 * group[=].element[+].code = #Subject.hpToContact.name					
 * group[=].element[=].display = "A.1.2.2.1 Name of the HP"					
-* group[=].element[=].target.code = #Condition.participant.actor.practitioner.name					
+* group[=].element[=].target.code = #Condition.extension:participantR5.actor.practitioner.name					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[=].target.comment = "where extension:participantR5.function = http://terminology.hl7.org/CodeSystem/v2-0131#CP Contact Person AND extension:participantR5.actor of type PracticionerRole"					
 * group[=].element[+].code = #Subject.hpToContact.role					
 * group[=].element[=].display = "A.1.2.2.2 Role of the HP"					
-* group[=].element[=].target.code = #Condition.participant.actor.code					
+* group[=].element[=].target.code = #Condition.extension:participantR5.actor.code					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[=].target.comment = "where extension:participantR5.function = http://terminology.hl7.org/CodeSystem/v2-0131#CP Contact Person AND extension:participantR5.actor of type PracticionerRole"					
 * group[=].element[+].code = #Subject.hpToContact.organization					
 * group[=].element[=].display = "A.1.2.2.3 HP Organisation"					
-* group[=].element[=].target.code = #Condition.participant.actor.organization					
+* group[=].element[=].target.code = #Condition.extension:participantR5.actor.organization					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[=].target.comment = "where extension:participantR5.function = http://terminology.hl7.org/CodeSystem/v2-0131#CP Contact Person AND extension:participantR5.actor of type PracticionerRole"					
 * group[=].element[+].code = #Subject.hpToContact.telephone					
 * group[=].element[=].display = "A.1.2.2.4 Telephone no."					
-* group[=].element[=].target.code = #Condition.participant.actor.telecom					
+* group[=].element[=].target.code = #Condition.extension:participantR5.actor.telecom					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[=].target.comment = "where extension:participantR5.function = http://terminology.hl7.org/CodeSystem/v2-0131#CP Contact Person AND extension:participantR5.actor of type PracticionerRole"					
 * group[=].element[+].code = #Subject.hpToContact.email					
 * group[=].element[=].display = "A.1.2.2.5 Email"					
-* group[=].element[=].target.code = #Condition.participant.actor.telecom					
+* group[=].element[=].target.code = #Condition.extension:participantR5.actor.telecom					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "where function = TBD AND actor of type PracticionerRole"					
+* group[=].element[=].target.comment = "where extension:participantR5.function = http://terminology.hl7.org/CodeSystem/v2-0131#CP Contact Person AND extension:participantR5.actor of type PracticionerRole"					
 * group[=].element[+].code = #Subject.hpToContact.affiliatedNetwork					
 * group[=].element[=].display = "A.1.2.2.6 Network affiliation"					
-* group[=].element[=].target.code = #Condition.participant.actor.organization					
+* group[=].element[=].target.code = #Condition.extension:participantR5.actor					
 * group[=].element[=].target.display = ""					
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "This might be described by using a CareTeam having this organization as participant.member"					
+* group[=].element[=].target.comment = "This might be described by using a CareTeam having this organization and/or this practitioner as extension:participantR5.member"					
 * group[=].element[+].code = #Subject.hpToContact.relatedWith					
 * group[=].element[=].display = "A.1.2.2.7 Related with"					
 * group[=].element[=].target.code = #Condition					

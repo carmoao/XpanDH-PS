@@ -189,7 +189,7 @@ resources:
 
   ConceptMap/subject2FHIR-eu-ps:
     name: A.1.1, A.1.2 - Subject of care model to this guide
-    description: It shows how the Subject data set defined by the EU eHN guidelines is mapped into this guide.
+    description: It shows how the Subject data set defined by the EU eHN guidelines is mapped into this guide. The group 2 map shows how to map into the Condition reosurce a problem-specific contact. For other kinds of contacts (e.g. contact for a specific procedure) a simlar apporach can be followed.
   
   ConceptMap/allergy2FHIR-eu-ps:
     name: A.2.1.1 - Allergy model to this guide
