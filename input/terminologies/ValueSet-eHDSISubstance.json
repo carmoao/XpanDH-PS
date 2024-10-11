@@ -5,7 +5,7 @@
   "id": "eHDSISubstance",
   "title": "Substance (PARTIAL)",
   "description": "The Value Set is used to code the substances of medicine.",
-  "url": "http://fhir.ehdsi.eu/mvc/eHDSISubstance",
+  "url": "http://terminology.ehdsi.eu/ValueSet/eHDSISubstance",
   "experimental": false,
   "compose": {
     "include": [

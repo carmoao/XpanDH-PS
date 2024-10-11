@@ -5,7 +5,7 @@ ValueSet: EHDSIRouteofAdministration
 Id: eHDSIRouteofAdministration					
 Title: "Route of Administration"					
 Description: """Route of Administration"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIRouteofAdministration"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIRouteofAdministration"			
 * ^status = #active					
 * ^experimental = false					
 

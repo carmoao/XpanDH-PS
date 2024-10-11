@@ -6,7 +6,7 @@ Id: eHDSIDocumentCode
 Title: "Document  Code"					
 Description: """Defines to which category the document belongs to : summary, prescription, or dispensation.
 """					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIDocumentCode"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIDocumentCode"			
 * ^status = #active					
 * ^experimental = false					
 					

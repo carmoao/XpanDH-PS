@@ -5,7 +5,7 @@ ValueSet: EHDSIHealthcareProfessionalRole
 Id: eHDSIHealthcareProfessionalRole					
 Title: "Healthcare Professional Role"					
 Description: """Healthcare Professional Role"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIHealthcareProfessionalRole"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIHealthcareProfessionalRole"			
 * ^status = #active					
 * ^experimental = false					
 					

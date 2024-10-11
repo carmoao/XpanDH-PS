@@ -5,7 +5,7 @@ ValueSet: EHDSIReactionAllergy
 Id: eHDSIReactionAllergy					
 Title: "Reaction Allergy"					
 Description: """Reaction Allergy"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIReactionAllergy"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIReactionAllergy"			
 * ^status = #active					
 * ^experimental = false					
 					

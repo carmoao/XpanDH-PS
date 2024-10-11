@@ -5,7 +5,7 @@ ValueSet: EHDSIAllergyStatus
 Id: eHDSIAllergyStatus					
 Title: "Allergy Status"					
 Description: """The value set is used to code the Allergy or Intolerance Clinical Status"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAllergyStatus"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAllergyStatus"			
 * ^status = #active					
 * ^experimental = false					
 					

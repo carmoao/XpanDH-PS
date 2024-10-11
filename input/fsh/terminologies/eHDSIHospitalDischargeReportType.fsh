@@ -5,7 +5,7 @@ ValueSet: EHDSIHospitalDischargeReportType
 Id: eHDSIHospitalDischargeReportType					
 Title: "Hospital Discharge Report Type"					
 Description: """Hospital Discharge Report Type"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIHospitalDischargeReportType"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIHospitalDischargeReportType"			
 * ^status = #active					
 * ^experimental = false					
 					

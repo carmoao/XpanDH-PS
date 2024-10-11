@@ -5,7 +5,7 @@
   "id": "eHDSIMedicalDevice",
   "title": "Medical Device",
   "description": "Medical Device",
-  "url": "http://fhir.ehdsi.eu/mvc/eHDSIMedicalDevice",
+  "url": "http://terminology.ehdsi.eu/ValueSet/eHDSIMedicalDevice",
   "experimental": false,
   "compose": {
     "include": [

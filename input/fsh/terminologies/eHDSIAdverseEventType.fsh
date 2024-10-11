@@ -5,7 +5,7 @@ ValueSet: EHDSIAdverseEventType
 Id: eHDSIAdverseEventType					
 Title: "Adverse Event Type"					
 Description: """Adverse Event Type"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAdverseEventType"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAdverseEventType"			
 * ^status = #active					
 * ^experimental = false					
 					

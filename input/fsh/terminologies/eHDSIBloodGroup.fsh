@@ -6,7 +6,7 @@ Id: eHDSIBloodGroup
 Title: "Blood Group"					
 Description: """The Value Set is used to code the value of patient's blood group + Rh
 """					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIBloodGroup"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIBloodGroup"			
 * ^status = #active					
 * ^experimental = false					
 					

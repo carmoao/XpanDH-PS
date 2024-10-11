@@ -5,7 +5,7 @@ ValueSet: EHDSIDoseForm
 Id: eHDSIDoseForm					
 Title: "Dose Form"					
 Description: """Dose Form"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIDoseForm"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIDoseForm"			
 * ^status = #active					
 * ^experimental = false					
 					

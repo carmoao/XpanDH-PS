@@ -5,7 +5,7 @@ ValueSet: EHDSISocialHistory
 Id: eHDSISocialHistory					
 Title: "eHDSI Social History"					
 Description: """The Value Set is used to code the different elements of the patient's social history."""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSISocialHistory"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSISocialHistory"			
 * ^status = #active					
 * ^experimental = false					
 					

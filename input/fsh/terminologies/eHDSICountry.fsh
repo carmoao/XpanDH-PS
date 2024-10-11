@@ -6,7 +6,7 @@ Id: eHDSICountry
 Title: "Country"					
 Description: """The Value Set is used to identify the nationality of all persons and organizations.
 """					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSICountry"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSICountry"			
 * ^status = #active					
 * ^experimental = false					
 					

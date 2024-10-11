@@ -5,7 +5,7 @@ ValueSet: EHDSISeverity
 Id: eHDSISeverity					
 Title: "Severity"					
 Description: """The Value Set is used for all Problems and Allergies in the Patient Summary to indicate the severity of the problem (or Allergy)"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSISeverity"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSISeverity"			
 * ^status = #active					
 * ^experimental = false					
 					

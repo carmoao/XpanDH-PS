@@ -5,7 +5,7 @@ ValueSet: EHDSIVaccine
 Id: eHDSIVaccine					
 Title: "Vaccine"					
 Description: """The Value Set is used to identify the patient's vaccinations in the Patient Summary"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIVaccine"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIVaccine"			
 * ^status = #active					
 * ^experimental = false					
 					

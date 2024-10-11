@@ -6,7 +6,7 @@ Id: eHDSICodeProb
 Title: "Problems"					
 Description: """The Value Set is used as an optional description of a problem in the patient Summary. It gives an information on the circumstances under which the problem was defined/discovered.
 """					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSICodeProb"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSICodeProb"			
 * ^status = #active					
 * ^experimental = false					
 					

@@ -5,7 +5,7 @@
   "id": "eHDSIActiveIngredient",
   "title": "Active Ingredient",
   "description": "The Value Set is used as a mandatory code for the Active Ingredient of medications in the Medications Summary as well as the prescription Sections. Also used to code allergy agents in the Allergies and Other Adverse Reactions Section of the patient Summary.",
-  "url": "http://fhir.ehdsi.eu/mvc/eHDSIActiveIngredient",
+  "url": "http://terminology.ehdsi.eu/ValueSet/eHDSIActiveIngredient",
   "experimental": false,
   "compose": {
     "include": [

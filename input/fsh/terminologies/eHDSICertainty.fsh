@@ -5,7 +5,7 @@ ValueSet: EHDSICertainty
 Id: eHDSICertainty					
 Title: "Certainty"					
 Description: """Value Set is used to support or decline the clinical status of the condition or diagnosis"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSICertainty"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSICertainty"			
 * ^status = #active					
 * ^experimental = false					
 					

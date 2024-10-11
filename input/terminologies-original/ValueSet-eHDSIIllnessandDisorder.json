@@ -5,7 +5,7 @@
   "id": "eHDSIIllnessandDisorder",
   "title": "Illness and Disorder",
   "description": "The complete content of ICD-10, excluding Chapter XX",
-  "url": "http://fhir.ehdsi.eu/mvc/eHDSIIllnessandDisorder",
+  "url": "http://terminology.ehdsi.eu/ValueSet/eHDSIIllnessandDisorder",
   "experimental": false,
   "compose": {
     "include": [

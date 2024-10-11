@@ -6,7 +6,7 @@ Id: eHDSIAbsentOrUnknownAllergy
 Title: "Absent or Unknown Allergies"					
 Description: """Absent or Unknown Allergies"""
 
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownAllergy"
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownAllergy"
 * ^status = #active					
 * ^experimental = false					
 					
@@ -25,7 +25,7 @@ ValueSet: EHDSIAbsentOrUnknownDevice
 Id: eHDSIAbsentOrUnknownDevice					
 Title: "Absent or Unknown Device"					
 Description: "Absent or Unknown Device"					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownDevice"					
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownDevice"					
 * ^status = #active					
 * ^experimental = false					
 					
@@ -43,7 +43,7 @@ ValueSet: EHDSIAbsentOrUnknownMedication
 Id: eHDSIAbsentOrUnknownMedication					
 Title: "Absent or Unknown Medication"					
 Description: "Absent or Unknown Medication"					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownMedication"
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownMedication"
 * ^status = #active					
 * ^experimental = false					
 					
@@ -60,7 +60,7 @@ ValueSet: EHDSIAbsentOrUnknownProblem
 Id: eHDSIAbsentOrUnknownProblem					
 Title: "Absent or Unknown Problem"					
 Description: "Absent or Unknown Problem"					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownProblem"
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownProblem"
 * ^status = #active					
 * ^experimental = false					
 					
@@ -77,7 +77,7 @@ ValueSet: EHDSIAbsentOrUnknownProcedure
 Id: eHDSIAbsentOrUnknownProcedure					
 Title: "Absent or Unknown Procedure"					
 Description: "Absent or Unknown Procedure"					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownProcedure"
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownProcedure"
 * ^status = #active					
 * ^experimental = false					
 					

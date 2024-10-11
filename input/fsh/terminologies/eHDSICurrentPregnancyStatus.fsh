@@ -5,7 +5,7 @@ ValueSet: EHDSICurrentPregnancyStatus
 Id: eHDSICurrentPregnancyStatus					
 Title: "Current Pregnancy Status"					
 Description: """Value set is used to provide the woman's current state at the date the observation was made"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSICurrentPregnancyStatus"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSICurrentPregnancyStatus"			
 * ^status = #active					
 * ^experimental = false					
 					

@@ -5,7 +5,7 @@ ValueSet: EHDSIAllergyCertainty
 Id: eHDSIAllergyCertainty					
 Title: "Allergy Certainty"					
 Description: """Value Set is used to support or decline the clinical status of the allergy or intolerance"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAllergyCertainty"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAllergyCertainty"			
 * ^status = #active					
 * ^experimental = false					
 					

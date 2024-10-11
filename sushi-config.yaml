@@ -22,12 +22,13 @@ copyright: >-
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.uv.ips: 1.1.0
+  # hl7.fhir.uv.ips: current
+  hl7.fhir.uv.ips: 1.1.0 // Update as soon as possible
   # hl7.fhir.us.mcode: current # to be removed if no more needed
-  hl7.fhir.eu.laboratory: 0.1.0
-  hl7.eu.fhir.xpandh: current
+  hl7.fhir.eu.laboratory: 0.1.x
+  hl7.eu.fhir.xpandh: dev
   hl7.fhir.extensions.r5: 4.0.1
-  hl7.fhir.eu.extensions: 0.1.0
+  hl7.fhir.eu.extensions: 0.1.x
 
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -69,23 +70,23 @@ pages:
 parameters:
 #  produce-jekyll-data: true
   special-url:
-    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownAllergy
-    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownDevice
-    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownMedication
-    - http://fhir.ehdsi.eu/mvc/eHDSIReactionAllergy
-    - http://fhir.ehdsi.eu/mvc/eHDSIActiveIngredient
-    - http://fhir.ehdsi.eu/mvc/eHDSIAllergenNoDrug
-    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownAllergy
-    - http://fhir.ehdsi.eu/mvc/eHDSIAbsentOrUnknownProblem
-    - http://fhir.ehdsi.eu/mvc/eHDSIIllnessandDisorder
-    - http://fhir.ehdsi.eu/mvc/eHDSIRareDisease
-    - http://fhir.ehdsi.eu/mvc/eHDSISeverity
-    - http://fhir.ehdsi.eu/mvc/eHDSIVaccine
-    - http://fhir.ehdsi.eu/mvc/eHDSIDoseForm
-    - http://fhir.ehdsi.eu/mvc/eHDSIMedicalDevice
-    - http://fhir.ehdsi.eu/mvc/eHDSISubstance
-    - http://fhir.ehdsi.eu/mvc/eHDSIBloodGroup
-    - http://fhir.ehdsi.eu/mvc/eHDSISocialHistory
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownAllergy
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownDevice
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownMedication
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIReactionAllergy
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIActiveIngredient
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIAllergenNoDrug
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownAllergy
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIAbsentOrUnknownProblem
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIIllnessandDisorder
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIRareDisease
+    - http://terminology.ehdsi.eu/ValueSet/eHDSISeverity
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIVaccine
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIDoseForm
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIMedicalDevice
+    - http://terminology.ehdsi.eu/ValueSet/eHDSISubstance
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIBloodGroup
+    - http://terminology.ehdsi.eu/ValueSet/eHDSISocialHistory
 
   path-resource:
     - input/terminologies

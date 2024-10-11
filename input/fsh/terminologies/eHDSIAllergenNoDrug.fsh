@@ -5,7 +5,7 @@ ValueSet: EHDSIAllergenNoDrug
 Id: eHDSIAllergenNoDrug					
 Title: "Allergen No Drug"					
 Description: """The value set is used to code the patient\'s kind of adverse reactions against substance, food or drugs"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIAllergenNoDrug"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIAllergenNoDrug"			
 * ^status = #active					
 * ^experimental = false					
 					

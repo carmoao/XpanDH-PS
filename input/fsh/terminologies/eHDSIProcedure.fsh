@@ -5,7 +5,7 @@ ValueSet: EHDSIProcedure
 Id: eHDSIProcedure					
 Title: "Procedure"					
 Description: """Procedure"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSIProcedure"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSIProcedure"			
 * ^status = #active					
 * ^experimental = false					
 					

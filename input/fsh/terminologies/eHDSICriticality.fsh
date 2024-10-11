@@ -5,7 +5,7 @@ ValueSet: EHDSICriticality
 Id: eHDSICriticality					
 Title: "Criticality"					
 Description: """Value set is used to estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance"""					
-* ^url = "http://fhir.ehdsi.eu/mvc/eHDSICriticality"			
+* ^url = "http://terminology.ehdsi.eu/ValueSet/eHDSICriticality"			
 * ^status = #active					
 * ^experimental = false					
 					
