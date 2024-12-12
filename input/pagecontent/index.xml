@@ -10,19 +10,47 @@
   <a name="scope"></a>
   <h3>Scope</h3>
   <p>
-    This is the Patient Summary HL7 FHIR Implementation Guide for the XpanDH project.
+    This is the Patient Summary HL7 FHIR Implementation Guide developed by the XpanDH project.
   </p>
+  <p>This specification has been created <b>to contribute</b> to the development of the European EHRxF for this domain.</p>
 
   <blockquote class="dragon">
-    <p>This specification has been created to contribute to the development of the European EHRxF for this domain.</p>
+    <p>This guide is kept only for documentation purposes, representing an official deliverable of the XpanDH project.</p>
     <p>
-      <b>This guide is not intended to replace or override possible future standard specifications or any other Implementation Guide that will be specified by MyHealth@Eu and/or JA-09</b>
-    </p>
+      <b>This guide is not intended to replace or override any other Implementation Guide specified by Standard Development Organizations, MyHealth@Eu and/or JA-09.</b></p>
+
+      <p>Please refer to the <b>the <a href="https://hl7.eu/fhir/eps/">HL7 Europe Patient Summary FHIR IG</a></b>for the specifications related to this domain</p>
   </blockquote>
 
   <a name="project"></a>
   <h3>The project</h3>
 An overview of the project - including the description of some of the used concepts - is provided in the <a href="https://build.fhir.org/ig/hl7-eu/xpandh/index.html"> General XpanDH FHIR IG.</a>
+
+
+<a name="other-guides"></a>
+  <h4>Relationships with other guides</h4>
+  <p>
+    The following figure provides an overview of the general development approach and the relationships of this guide with the HL7 Europe Patient Summary FHIR IGs
+  </p>
+
+  <div>
+    <img src="overview.png" alt="Overview" width="80%"/>
+    <p>Figure 1 - Overview</p>
+    <p></p>
+  </div>
+
+  <p></p>
+  <p>
+  This guide has been created to support the development of the  European EHRxF for the Patient Summary domain and not for specifying rules to be used for real systems. Other guides taking advantage of the work of this project are supposed to take this role (e.g MyHealth@EU specification for cross-border services).
+  </p>
+
+  <p>A continuos co-creation and alignement work has been established for these three guides:
+    <ul>
+      <li>The HL7 Europe PAtient Summary Guide acts as common parent for any EU guide on this domain</li>
+      <li>This guide - derived from the EU one - is used to experiment solutions and rules for being used by the XpanDH communities</li>
+      <li>Findings collected and solutions experimented by the XpanDH communities are feedback to the HL7 Europe project.</li>
+    </ul>
+  </p>
 
 
   <a name="x-versions"></a>
